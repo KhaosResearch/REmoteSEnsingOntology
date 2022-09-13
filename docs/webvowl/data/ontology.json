@@ -4,7 +4,7 @@
     "languages" : [ "de", "ru", "pt", "jp", "kr", "en", "it", "fr", "es", "zh", "undefined", "ar", "ja", "pl", "nl" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://aemet.linkeddata.es/ontology", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2001/XMLSchema", "http://www.opengis.net/ont/sf", "http://www.opengis.net/ont/gml", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/reseo", "http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl", "http://xmlns.com/foaf/0.1", "http://purl.oclc.org/NET/ssnx/ssn", "http://www.w3.org/2006/time", "http://www.w3.org/2006/zone", "http://www.opengis.net/ont/geosparql", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
-      "undefined" : "RESEO - REmote SEnsing Ontology"
+      "undefined" : "Remote Sensing Ontology"
     },
     "iri" : "https://w3id.org/reseo",
     "version" : "1.0",
@@ -16,16 +16,15 @@
       "undefined" : "RESEO - REmote SEnsin Ontology"
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://opensource.org/licenses/MIT",
-        "type" : "label"
-      } ],
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
         "value" : "http://khaos.uma.es/green-senti/reseo/0.1",
+        "type" : "label"
+      }, {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -34,10 +33,39 @@
         "value" : "Khaos Research Group, University of Málaga",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
+      "incompatibleWith" : [ {
+        "identifier" : "incompatibleWith",
         "language" : "undefined",
-        "value" : "reseo",
+        "value" : "http://khaos.uma.es/green-senti/reseo/0.1",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-09-24T23:59:59",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "RESEO - REmote SEnsing Ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Remote Sensing Ontology",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://opensource.org/licenses/MIT",
         "type" : "label"
       } ],
       "rights" : [ {
@@ -46,10 +74,16 @@
         "value" : "(c) Khaos Research Group, University of Málaga",
         "type" : "label"
       } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "reseo",
+        "type" : "label"
+      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "Khaos Research Group",
+        "value" : "Expert Systems with Applications",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -64,21 +98,21 @@
         "value" : "Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., & Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "issued" : [ {
+        "identifier" : "issued",
         "language" : "undefined",
-        "value" : "1.0",
-        "type" : "label"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "undefined",
-        "value" : "Remote Sensing Ontology",
+        "value" : "2022-01-01T23:59:59",
         "type" : "label"
       }, {
-        "identifier" : "title",
+        "identifier" : "issued",
         "language" : "undefined",
-        "value" : "RESEO - REmote SEnsing Ontology",
+        "value" : "published",
+        "type" : "label"
+      } ],
+      "doi" : [ {
+        "identifier" : "doi",
+        "language" : "undefined",
+        "value" : "https://doi.org/10.1016/j.eswa.2021.115838",
         "type" : "label"
       } ]
     }
@@ -160,7 +194,7 @@
     "id" : "117",
     "type" : "owl:Class"
   }, {
-    "id" : "121",
+    "id" : "119",
     "type" : "owl:Class"
   }, {
     "id" : "130",
@@ -205,7 +239,7 @@
     "id" : "228",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "122",
+    "id" : "120",
     "type" : "owl:Class"
   }, {
     "id" : "231",
@@ -319,7 +353,7 @@
     "id" : "317",
     "type" : "owl:Class"
   }, {
-    "id" : "318",
+    "id" : "320",
     "type" : "owl:Class"
   }, {
     "id" : "321",
@@ -517,7 +551,7 @@
     "id" : "60",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "120",
+    "id" : "125",
     "type" : "rdfs:Literal"
   }, {
     "id" : "156",
@@ -649,10 +683,10 @@
     "id" : "480",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "33",
+    "id" : "239",
     "type" : "owl:Class"
   }, {
-    "id" : "239",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
     "id" : "168",
@@ -670,7 +704,7 @@
     "id" : "385",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "320",
+    "id" : "319",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "488",
@@ -733,7 +767,7 @@
     "id" : "181",
     "type" : "owl:Class"
   }, {
-    "id" : "125",
+    "id" : "123",
     "type" : "owl:Class"
   }, {
     "id" : "55",
@@ -907,7 +941,7 @@
     "id" : "262",
     "type" : "owl:Class"
   }, {
-    "id" : "123",
+    "id" : "121",
     "type" : "owl:Class"
   }, {
     "id" : "279",
@@ -943,7 +977,7 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "124",
+    "id" : "122",
     "type" : "owl:Class"
   }, {
     "id" : "244",
@@ -1235,43 +1269,8 @@
     "annotations" : {
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "pl",
-        "value" : "Rok",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "es",
         "value" : "Año",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "fr",
-        "value" : "Année (calendrier)",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "zh",
-        "value" : "年",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "ar",
-        "value" : "سنة",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "ru",
-        "value" : "Год",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Jahr",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "nl",
-        "value" : "Jaar",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -1280,8 +1279,33 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "pt",
-        "value" : "Ano",
+        "language" : "ja",
+        "value" : "年",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "ru",
+        "value" : "Год",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "fr",
+        "value" : "Année (calendrier)",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "pl",
+        "value" : "Rok",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "zh",
+        "value" : "年",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "nl",
+        "value" : "Jaar",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -1290,8 +1314,18 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "ja",
-        "value" : "年",
+        "language" : "de",
+        "value" : "Jahr",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "ar",
+        "value" : "سنة",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "pt",
+        "value" : "Ano",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1355,12 +1389,12 @@
         "es" : "condicion meteorologica"
       }
     } ],
-    "subClasses" : [ "122", "123", "124", "125" ],
+    "subClasses" : [ "120", "121", "122", "123" ],
     "comment" : {
       "undefined" : "A feature is an abstraction of real world phenomena (thing, person, event, etc)."
     },
     "attributes" : [ "external" ],
-    "id" : "121"
+    "id" : "119"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -1457,7 +1491,7 @@
     },
     "subClasses" : [ "177" ],
     "comment" : {
-      "undefined" : "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes.\n"
+      "undefined" : "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes."
     },
     "attributes" : [ "external" ],
     "id" : "176"
@@ -1483,6 +1517,11 @@
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
+        "language" : "es",
+        "value" : "Un huso horario designado está asociado con una región geográfica. Sin embargo, para una región particular el desplazamiento desde UTC a menudo varía según las estaciones, y las fechas de los cambios pueden variar de un año a otro. La designación de huso horario  normalmente cambia de una estación a otra (por ejemplo, el horario estándar frente al horario de verano ambos del este de Australia). Además, del desplazamiento para un huso horario puede cambiar sobre escalas de tiempo mayores, aunque su designación no lo haga.\n    Se puede encontrar una guía detallada sobre el funcionamiento de husos horarios en http://www.w3.org/TR/timezone/.\"@es , \"En [owl-time-20060927] se describió una ontología para descripciones de husos horarios, y se proporcionó en un espacio de nombres separado tzont:. Sin embargo, dicha ontología estaba incompleta en su alcance, y el ejemplo de conjuntos de datos (datasets) era selectivo. Además, puesto que el uso de una clase de una ontología externa como el rango de una propiedad de objeto en OWL-Time crea una dependencia, la referencia a la clase huso horario se ha reemplazado por una clase que viene a ser un \"cajón de sastre\" en la en la parte normativa de esta versión de OWL-Time.",
+        "type" : "label"
+      }, {
+        "identifier" : "note",
         "language" : "en",
         "value" : "An ontology for time zone descriptions was described in [owl-time-20060927] and provided as RDF in a separate namespace tzont:. However, that ontology was incomplete in scope, and the example datasets were selective. Furthermore, since the use of a class from an external ontology as the range of an ObjectProperty in OWL-Time creates a dependency, reference to the time zone class has been replaced with the 'stub' class in the normative part of this version of OWL-Time.",
         "type" : "label"
@@ -1490,11 +1529,6 @@
         "identifier" : "note",
         "language" : "en",
         "value" : "A designated timezone is associated with a geographic region. However, for a particular region the offset from UTC often varies seasonally, and the dates of the changes may vary from year to year. The timezone designation usually changes for the different seasons (e.g. Australian Eastern Standard Time vs. Australian Eastern Daylight Time). Furthermore, the offset for a timezone may change over longer timescales, though its designation might not.  \n\nDetailed guidance about working with time zones is given in http://www.w3.org/TR/timezone/ .",
-        "type" : "label"
-      }, {
-        "identifier" : "note",
-        "language" : "es",
-        "value" : "Un huso horario designado está asociado con una región geográfica. Sin embargo, para una región particular el desplazamiento desde UTC a menudo varía según las estaciones, y las fechas de los cambios pueden variar de un año a otro. La designación de huso horario  normalmente cambia de una estación a otra (por ejemplo, el horario estándar frente al horario de verano ambos del este de Australia). Además, del desplazamiento para un huso horario puede cambiar sobre escalas de tiempo mayores, aunque su designación no lo haga.\n    Se puede encontrar una guía detallada sobre el funcionamiento de husos horarios en http://www.w3.org/TR/timezone/.\"@es , \"En [owl-time-20060927] se describió una ontología para descripciones de husos horarios, y se proporcionó en un espacio de nombres separado tzont:. Sin embargo, dicha ontología estaba incompleta en su alcance, y el ejemplo de conjuntos de datos (datasets) era selectivo. Además, puesto que el uso de una clase de una ontología externa como el rango de una propiedad de objeto en OWL-Time crea una dependencia, la referencia a la clase huso horario se ha reemplazado por una clase que viene a ser un \"cajón de sastre\" en la en la parte normativa de esta versión de OWL-Time.",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1510,13 +1544,13 @@
       } ],
       "historyNote" : [ {
         "identifier" : "historyNote",
-        "language" : "undefined",
-        "value" : "In the original 2006 version of OWL-Time, the TimeZone class, with several properties corresponding to a specific model of time-zones, was defined in a separate namespace \"http://www.w3.org/2006/timezone#\". \n\nIn the current version a class with same local name is put into the main OWL-Time namespace, removing the dependency on the external namespace. \n\nAn alignment axiom \n\ttzont:TimeZone rdfs:subClassOf time:TimeZone . \nallows data encoded according to the previous version to be consistent with the updated ontology. ",
+        "language" : "es",
+        "value" : "En la versión original de OWL-Time de 2006, se definió, en un espacio de nombres diferente \"http://www.w3.org/2006/timezone#\", la clase 'huso horario', con varias propiedades específicas correspondientes a un modelo específico de huso horario.\n    En la versión actual hay una clase con el mismo nombre local en el espacio de nombres de OWL-Time, eliminando la dependencia del espacio de nombres externo.\n    Un axioma de alineación permite que los datos codificados de acuerdo con la versión anterior sean consistentes con la ontología actualizada.",
         "type" : "label"
       }, {
         "identifier" : "historyNote",
-        "language" : "es",
-        "value" : "En la versión original de OWL-Time de 2006, se definió, en un espacio de nombres diferente \"http://www.w3.org/2006/timezone#\", la clase 'huso horario', con varias propiedades específicas correspondientes a un modelo específico de huso horario.\n    En la versión actual hay una clase con el mismo nombre local en el espacio de nombres de OWL-Time, eliminando la dependencia del espacio de nombres externo.\n    Un axioma de alineación permite que los datos codificados de acuerdo con la versión anterior sean consistentes con la ontología actualizada.",
+        "language" : "undefined",
+        "value" : "In the original 2006 version of OWL-Time, the TimeZone class, with several properties corresponding to a specific model of time-zones, was defined in a separate namespace \"http://www.w3.org/2006/timezone#\". \n\nIn the current version a class with same local name is put into the main OWL-Time namespace, removing the dependency on the external namespace. \n\nAn alignment axiom \n\ttzont:TimeZone rdfs:subClassOf time:TimeZone . \nallows data encoded according to the previous version to be consistent with the updated ontology. ",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -1580,13 +1614,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Description of temporal extent structured with separate values for the various elements of a calendar-clock system.",
+        "language" : "es",
+        "value" : "Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario.",
+        "language" : "en",
+        "value" : "Description of temporal extent structured with separate values for the various elements of a calendar-clock system.",
         "type" : "label"
       } ]
     },
@@ -1629,10 +1663,11 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Building"
+      "IRI-based" : "Building",
+      "en" : "Building"
     },
-    "id" : "122",
-    "superClasses" : [ "143", "121" ]
+    "id" : "120",
+    "superClasses" : [ "143", "119" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -1736,13 +1771,13 @@
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
-        "language" : "es",
-        "value" : "Alternativa a 'descripción de tiempo' para proporcionar descripción soporte a una duración temporal diferente a utilizar un sistema de calendario/reloj.",
+        "language" : "en",
+        "value" : "Alternative to time:DurationDescription to support description of a temporal duration other than using a calendar/clock system.",
         "type" : "label"
       }, {
         "identifier" : "note",
-        "language" : "en",
-        "value" : "Alternative to time:DurationDescription to support description of a temporal duration other than using a calendar/clock system.",
+        "language" : "es",
+        "value" : "Alternativa a 'descripción de tiempo' para proporcionar descripción soporte a una duración temporal diferente a utilizar un sistema de calendario/reloj.",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1912,7 +1947,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band11"
+      "IRI-based" : "Band11",
+      "en" : "Band 11"
     },
     "id" : "285",
     "superClasses" : [ "93" ]
@@ -1921,7 +1957,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band10"
+      "IRI-based" : "Band10",
+      "en" : "Band 10"
     },
     "id" : "286",
     "superClasses" : [ "93" ]
@@ -1930,7 +1967,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band12"
+      "IRI-based" : "Band12",
+      "en" : "Band 12"
     },
     "id" : "289",
     "superClasses" : [ "93" ]
@@ -2075,16 +2113,18 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band08"
+      "IRI-based" : "Band08",
+      "en" : "Band 8"
     },
-    "id" : "318",
+    "id" : "320",
     "superClasses" : [ "93" ]
   }, {
     "iri" : "https://w3id.org/reseo#Band07",
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band07"
+      "IRI-based" : "Band07",
+      "en" : "Band 7"
     },
     "id" : "321",
     "superClasses" : [ "93" ]
@@ -2093,7 +2133,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band09"
+      "IRI-based" : "Band09",
+      "en" : "Band 9"
     },
     "id" : "324",
     "superClasses" : [ "93" ]
@@ -2102,7 +2143,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band02"
+      "IRI-based" : "Band02",
+      "en" : "Band 2"
     },
     "id" : "325",
     "superClasses" : [ "93" ]
@@ -2111,7 +2153,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band01"
+      "IRI-based" : "Band01",
+      "en" : "Band 1"
     },
     "id" : "326",
     "superClasses" : [ "93" ]
@@ -2120,7 +2163,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band04"
+      "IRI-based" : "Band04",
+      "en" : "Band 4"
     },
     "id" : "305",
     "superClasses" : [ "93" ]
@@ -2136,7 +2180,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band03"
+      "IRI-based" : "Band03",
+      "en" : "Band 3"
     },
     "id" : "308",
     "superClasses" : [ "93" ]
@@ -2152,7 +2197,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band06"
+      "IRI-based" : "Band06",
+      "en" : "Band 6"
     },
     "id" : "312",
     "superClasses" : [ "93" ]
@@ -2168,7 +2214,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band05"
+      "IRI-based" : "Band05",
+      "en" : "Band 5"
     },
     "id" : "314",
     "superClasses" : [ "93" ]
@@ -2266,13 +2313,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario. El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo de cada una de las propiedades numéricas se restringe a xsd:decimal.",
+        "language" : "en",
+        "value" : "Description of temporal extent structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of each of the numeric properties is restricted to xsd:decimal",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Description of temporal extent structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of each of the numeric properties is restricted to xsd:decimal",
+        "language" : "es",
+        "value" : "Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario. El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo de cada una de las propiedades numéricas se restringe a xsd:decimal.",
         "type" : "label"
       } ]
     },
@@ -2311,20 +2358,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Un intervalo temporal o un instante.",
+        "language" : "en",
+        "value" : "A temporal interval or instant.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A temporal interval or instant.",
+        "language" : "es",
+        "value" : "Un intervalo temporal o un instante.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "TemporalEntity",
       "en" : "Temporal entity",
-      "es" : "entidad temporal"
+      "es" : "Entidad temporal"
     },
     "union" : [ "273", "42" ],
     "subClasses" : [ "273", "42" ],
@@ -2495,13 +2542,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Time extent; duration of a time interval separate from its particular start position",
+        "language" : "es",
+        "value" : "Extensión de tiempo; duración de un intervalo de tiempo independiente de su posición de inicio particular.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Extensión de tiempo; duración de un intervalo de tiempo independiente de su posición de inicio particular.",
+        "language" : "en",
+        "value" : "Time extent; duration of a time interval separate from its particular start position",
         "type" : "label"
       } ]
     },
@@ -2567,13 +2614,13 @@
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
-        "language" : "es",
-        "value" : "La pertenencia a la clase 'día de la semana' está abierta, para permitir longitudes de semana alternativas y diferentes nombres de días.",
+        "language" : "en",
+        "value" : "Membership of the class :DayOfWeek is open, to allow for alternative week lengths and different day names.",
         "type" : "label"
       }, {
         "identifier" : "note",
-        "language" : "en",
-        "value" : "Membership of the class :DayOfWeek is open, to allow for alternative week lengths and different day names.",
+        "language" : "es",
+        "value" : "La pertenencia a la clase 'día de la semana' está abierta, para permitir longitudes de semana alternativas y diferentes nombres de días.",
         "type" : "label"
       } ],
       "changeNote" : [ {
@@ -2584,20 +2631,20 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The day of week",
+        "language" : "es",
+        "value" : "El día de la semana",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "El día de la semana",
+        "language" : "en",
+        "value" : "The day of week",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "DayOfWeek",
       "en" : "Day of week",
-      "es" : "Día de la semana"
+      "es" : "día de la semana"
     },
     "individuals" : [ {
       "iri" : "http://www.w3.org/2006/time#Thursday",
@@ -2605,13 +2652,18 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Jueves",
+          "language" : "zh",
+          "value" : "星期四",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "Donderdag",
+          "language" : "ja",
+          "value" : "木曜日",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Thursday",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2630,28 +2682,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "星期四",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Thursday",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Четверг",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "it",
           "value" : "Giovedì",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "Czwartek",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2660,8 +2692,23 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ja",
-          "value" : "木曜日",
+          "language" : "ru",
+          "value" : "Четверг",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Jueves",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "Donderdag",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "Czwartek",
           "type" : "label"
         } ]
       },
@@ -2680,18 +2727,38 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "星期五",
+          "language" : "pt",
+          "value" : "Sexta-feira",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ja",
-          "value" : "金曜日",
+          "language" : "pl",
+          "value" : "Piątek",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Venerdì",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
           "value" : "Friday",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "星期五",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Vendredi",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "الجمعة",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2705,33 +2772,13 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Sexta-feira",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Vendredi",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "ru",
           "value" : "Пятница",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "Piątek",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "الجمعة",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Venerdì",
+          "language" : "ja",
+          "value" : "金曜日",
           "type" : "label"
         } ]
       },
@@ -2745,38 +2792,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Mardi",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tuesday",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Martes",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "星期二",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Terça-feira",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "ar",
           "value" : "الثلاثاء",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Dienstag",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2785,8 +2802,33 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "Dinsdag",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Martes",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "it",
           "value" : "Martedì",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "星期二",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Tuesday",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Terça-feira",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2795,13 +2837,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "Dinsdag",
+          "language" : "fr",
+          "value" : "Mardi",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "pl",
           "value" : "Wtorek",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Dienstag",
           "type" : "label"
         } ]
       },
@@ -2820,28 +2867,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Mercoledì",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "nl",
           "value" : "Woensdag",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Mittwoch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "星期三",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Miércoles",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2850,8 +2877,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ja",
-          "value" : "水曜日",
+          "language" : "es",
+          "value" : "Miércoles",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2860,8 +2887,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Mercoledì",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "ar",
           "value" : "الأربعاء",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "Środa",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2870,8 +2907,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "Środa",
+          "language" : "de",
+          "value" : "Mittwoch",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ja",
+          "value" : "水曜日",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "星期三",
           "type" : "label"
         } ]
       },
@@ -2885,53 +2932,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Sábado",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "星期六",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "Zaterdag",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Samedi",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ja",
-          "value" : "土曜日",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Sabato",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "Sobota",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Суббота",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "de",
           "value" : "Samstag",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "السبت",
+          "language" : "zh",
+          "value" : "星期六",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2942,6 +2949,46 @@
           "identifier" : "prefLabel",
           "language" : "en",
           "value" : "Saturday",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ja",
+          "value" : "土曜日",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "Суббота",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Sabato",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "Zaterdag",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "Sobota",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Sábado",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "السبت",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Samedi",
           "type" : "label"
         } ]
       },
@@ -2955,48 +3002,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Domenica",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Domingo",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "الأحد (يوم)",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Dimanche",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ja",
-          "value" : "日曜日",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Sunday",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Sonntag",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "ru",
           "value" : "Воскресенье",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Domingo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -3005,13 +3012,53 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Domenica",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Sunday",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Domingo",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "zh",
           "value" : "星期日",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Sonntag",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "nl",
           "value" : "Zondag",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ja",
+          "value" : "日曜日",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "الأحد (يوم)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Domingo",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Dimanche",
           "type" : "label"
         } ]
       },
@@ -3025,23 +3072,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Montag",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "nl",
           "value" : "Maandag",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Monday",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "Segunda-feira",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -3050,28 +3082,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "Lunedì",
+          "language" : "ru",
+          "value" : "Понедельник",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Lundi",
+          "language" : "en",
+          "value" : "Monday",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "الاثنين",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ja",
-          "value" : "月曜日",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "Poniedziałek",
+          "language" : "de",
+          "value" : "Montag",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -3080,8 +3102,33 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Понедельник",
+          "language" : "ar",
+          "value" : "الاثنين",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Lundi",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "Lunedì",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "Poniedziałek",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "Segunda-feira",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ja",
+          "value" : "月曜日",
           "type" : "label"
         } ]
       },
@@ -3369,7 +3416,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "120",
+    "id" : "125",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3451,7 +3498,7 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "122", "123", "124", "125" ],
+    "subClasses" : [ "120", "121", "122", "123" ],
     "attributes" : [ "external" ],
     "id" : "143"
   }, {
@@ -3461,13 +3508,13 @@
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
-        "language" : "undefined",
-        "value" : "Some combinations of properties are redundant - for example, within a specified :year if :dayOfYear is provided then :day and :month can be computed, and vice versa. Individual values should be consistent with each other and the calendar, indicated through the value of the :hasTRS property.",
+        "language" : "es",
+        "value" : "Algunas combinaciones de propiedades son redundantes - por ejemplo, dentro de un 'año' especificado si se proporciona 'día del año' entonces 'día' y 'mes' se pueden computar, y viceversa. Los valores individuales deberían ser consistentes entre ellos y con el calendario, indicado a través del valor de la propiedad 'tiene TRS'.",
         "type" : "label"
       }, {
         "identifier" : "note",
-        "language" : "es",
-        "value" : "Algunas combinaciones de propiedades son redundantes - por ejemplo, dentro de un 'año' especificado si se proporciona 'día del año' entonces 'día' y 'mes' se pueden computar, y viceversa. Los valores individuales deberían ser consistentes entre ellos y con el calendario, indicado a través del valor de la propiedad 'tiene TRS'.",
+        "language" : "undefined",
+        "value" : "Some combinations of properties are redundant - for example, within a specified :year if :dayOfYear is provided then :day and :month can be computed, and vice versa. Individual values should be consistent with each other and the calendar, indicated through the value of the :hasTRS property.",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3516,13 +3563,13 @@
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
-        "language" : "es",
-        "value" : "En el ISO 19108:2002 [ISO19108] se proporciona una taxonomía de sistemas de referencia temporal, incluyendo (a) sistemas de calendario + reloj; (b) sistemas de coordenadas temporales (es decir, desplazamiento numérico a partir de una época); (c) sistemas de referencia ordinales temporales (es decir, secuencia ordenada de intervalos nombrados, no necesariamente de igual duración).",
+        "language" : "en",
+        "value" : "A taxonomy of temporal reference systems is provided in ISO 19108:2002 [ISO19108], including (a) calendar + clock systems; (b) temporal coordinate systems (i.e. numeric offset from an epoch); (c) temporal ordinal reference systems (i.e. ordered sequence of named intervals, not necessarily of equal duration).",
         "type" : "label"
       }, {
         "identifier" : "note",
-        "language" : "en",
-        "value" : "A taxonomy of temporal reference systems is provided in ISO 19108:2002 [ISO19108], including (a) calendar + clock systems; (b) temporal coordinate systems (i.e. numeric offset from an epoch); (c) temporal ordinal reference systems (i.e. ordered sequence of named intervals, not necessarily of equal duration).",
+        "language" : "es",
+        "value" : "En el ISO 19108:2002 [ISO19108] se proporciona una taxonomía de sistemas de referencia temporal, incluyendo (a) sistemas de calendario + reloj; (b) sistemas de coordenadas temporales (es decir, desplazamiento numérico a partir de una época); (c) sistemas de referencia ordinales temporales (es decir, secuencia ordenada de intervalos nombrados, no necesariamente de igual duración).",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3805,21 +3852,6 @@
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://aemet.linkeddata.es/ontology/DryBulbThermometer",
-    "baseIri" : "http://aemet.linkeddata.es/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DryBulbThermometer",
-      "en" : "Dry bulb thermometer",
-      "es" : "Termometro seco"
-    },
-    "comment" : {
-      "undefined" : "Mide la temperatura en grados Celsius. Mide la temperatura del aire."
-    },
-    "attributes" : [ "external" ],
-    "id" : "33",
-    "superClasses" : [ "30" ]
-  }, {
     "iri" : "http://aemet.linkeddata.es/ontology/Heliograph",
     "baseIri" : "http://aemet.linkeddata.es/ontology",
     "instances" : 0,
@@ -3834,6 +3866,21 @@
     "attributes" : [ "external" ],
     "id" : "239",
     "superClasses" : [ "184" ]
+  }, {
+    "iri" : "http://aemet.linkeddata.es/ontology/DryBulbThermometer",
+    "baseIri" : "http://aemet.linkeddata.es/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DryBulbThermometer",
+      "en" : "Dry bulb thermometer",
+      "es" : "Termometro seco"
+    },
+    "comment" : {
+      "undefined" : "Mide la temperatura en grados Celsius. Mide la temperatura del aire."
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://w3id.org/reseo#Landsat8Product",
     "baseIri" : "https://w3id.org/reseo",
@@ -3889,7 +3936,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "320",
+    "id" : "319",
     "label" : {
       "IRI-based" : "string"
     }
@@ -4031,8 +4078,8 @@
     },
     "label" : {
       "IRI-based" : "Instant",
-      "en" : "Time instant",
-      "es" : "Instante"
+      "en" : "Instant",
+      "es" : "instante de tiempo."
     },
     "comment" : {
       "en" : "A temporal entity with zero extent or duration",
@@ -4101,7 +4148,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "NDVI"
+      "IRI-based" : "NDVI",
+      "en" : "NDVI"
     },
     "id" : "343",
     "superClasses" : [ "93" ]
@@ -4152,10 +4200,11 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BareSoil"
+      "IRI-based" : "BareSoil",
+      "en" : "Bare Soil"
     },
-    "id" : "125",
-    "superClasses" : [ "143", "121" ]
+    "id" : "123",
+    "superClasses" : [ "143", "119" ]
   }, {
     "iri" : "http://www.opengis.net/ont/sf#LinearRing",
     "baseIri" : "http://www.opengis.net/ont/sf",
@@ -4394,7 +4443,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/gml",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -4404,7 +4453,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/gml",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -4538,9 +4587,10 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "RasterImage"
+      "IRI-based" : "RasterImage",
+      "en" : "Raster Image"
     },
-    "subClasses" : [ "343", "318", "321", "324", "328", "285", "286", "325", "326", "289", "305", "308", "312", "314" ],
+    "subClasses" : [ "343", "320", "321", "324", "328", "285", "286", "325", "326", "289", "305", "308", "312", "314" ],
     "id" : "93"
   }, {
     "iri" : "http://www.opengis.net/ont/sf#Line",
@@ -4702,16 +4752,16 @@
         "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
         "type" : "label"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
-        "type" : "label"
-      } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
         "value" : "A concept scheme may be defined to include concepts from different sources.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
         "type" : "label"
       } ]
     },
@@ -4773,7 +4823,7 @@
     "label" : {
       "IRI-based" : "TemporalUnit",
       "en" : "Temporal unit",
-      "es" : "unidad de tiempo"
+      "es" : "Unidad temporal"
     },
     "individuals" : [ {
       "iri" : "http://www.w3.org/2006/time#unitHour",
@@ -4781,38 +4831,18 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "一小時",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "godzina",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "ora",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "hour",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "jp",
-          "value" : "一時間",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "de",
           "value" : "Stunde",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "uur",
+          "language" : "pt",
+          "value" : "hora",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "один час\"@ru",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -4821,7 +4851,7 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pt",
+          "language" : "es",
           "value" : "hora",
           "type" : "label"
         }, {
@@ -4831,18 +4861,38 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "один час\"@ru",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "hora",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "kr",
           "value" : "한 시간",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "hour",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "ora",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "jp",
+          "value" : "一時間",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "godzina",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "uur",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "一小時",
           "type" : "label"
         } ]
       },
@@ -4856,28 +4906,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "seconde",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "segundo",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "Sekundę",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "secondo",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "seconde",
+          "language" : "en",
+          "value" : "second",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -4886,8 +4916,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "kr",
-          "value" : "일초",
+          "language" : "fr",
+          "value" : "seconde",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "seconde",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "segundo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -4896,12 +4936,12 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "second",
+          "language" : "kr",
+          "value" : "일초",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pt",
+          "language" : "es",
           "value" : "segundo",
           "type" : "label"
         }, {
@@ -4913,6 +4953,16 @@
           "identifier" : "prefLabel",
           "language" : "de",
           "value" : "Sekunde",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "Sekundę",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "secondo",
           "type" : "label"
         } ]
       },
@@ -4926,28 +4976,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "minute",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "minuut",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "minuto",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "jp",
-          "value" : "一分",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "одна минута",
+          "language" : "ar",
+          "value" : "دقيقة واحدة",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -4961,23 +4991,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "minuto",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "等一下",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "kr",
-          "value" : "분",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "دقيقة واحدة",
+          "language" : "ru",
+          "value" : "одна минута",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -4986,8 +5001,43 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "minuut",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "kr",
+          "value" : "분",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "minute",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "minuto",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "jp",
+          "value" : "一分",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "minuto",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "it",
           "value" : "minuto",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "等一下",
           "type" : "label"
         } ]
       },
@@ -5001,6 +5051,31 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "一周",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "settimana",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "одна неделя",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "jp",
+          "value" : "一週間",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "semaine",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "ar",
           "value" : "سبوع واحد",
           "type" : "label"
@@ -5011,33 +5086,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "一周",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "semana",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "kr",
-          "value" : "일주일",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "settimana",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "de",
           "value" : "Woche",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "semaine",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -5046,13 +5096,13 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "week",
+          "language" : "es",
+          "value" : "semana",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "jp",
-          "value" : "一週間",
+          "language" : "en",
+          "value" : "week",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -5061,8 +5111,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "одна неделя",
+          "language" : "kr",
+          "value" : "일주일",
           "type" : "label"
         } ]
       },
@@ -5071,103 +5121,13 @@
         "en" : "Week (unit of temporal duration)"
       }
     }, {
-      "iri" : "http://www.w3.org/2006/time#unitYear",
-      "baseIri" : "http://www.w3.org/2006/time",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "an",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "kr",
-          "value" : "1 년",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "سنة واحدة",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "rok",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "jp",
-          "value" : "1年",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "一年",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "year",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "один год",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "pt",
-          "value" : "ano",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Jahr",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "un año",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "anno",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "jaar",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "unitYear",
-        "en" : "Year (unit of temporal duration)"
-      }
-    }, {
       "iri" : "http://www.w3.org/2006/time#unitMonth",
       "baseIri" : "http://www.w3.org/2006/time",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "mese",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "mois",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "maand",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Monat",
+          "language" : "zh",
+          "value" : "一個月",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -5176,18 +5136,28 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "pl",
-          "value" : "miesiąc",
+          "language" : "kr",
+          "value" : "한달",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "一個月",
+          "language" : "fr",
+          "value" : "mois",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "один месяц",
+          "language" : "de",
+          "value" : "Monat",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "mese",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "month",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -5196,18 +5166,23 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "kr",
-          "value" : "한달",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "jp",
           "value" : "一か月",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "month",
+          "language" : "pl",
+          "value" : "miesiąc",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "maand",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "один месяц",
           "type" : "label"
         } ]
       },
@@ -5216,18 +5191,93 @@
         "en" : "Month (unit of temporal duration)"
       }
     }, {
+      "iri" : "http://www.w3.org/2006/time#unitYear",
+      "baseIri" : "http://www.w3.org/2006/time",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Jahr",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "один год",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "un año",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pt",
+          "value" : "ano",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "it",
+          "value" : "anno",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "سنة واحدة",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "一年",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "kr",
+          "value" : "1 년",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "jp",
+          "value" : "1年",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "year",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "an",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "jaar",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "pl",
+          "value" : "rok",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "unitYear",
+        "en" : "Year (unit of temporal duration)"
+      }
+    }, {
       "iri" : "http://www.w3.org/2006/time#unitDay",
       "baseIri" : "http://www.w3.org/2006/time",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "day",
+          "language" : "it",
+          "value" : "giorno",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "nl",
-          "value" : "dag",
+          "language" : "en",
+          "value" : "day",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -5236,28 +5286,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tag",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "it",
-          "value" : "giorno",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "zh",
-          "value" : "一天",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "kr",
-          "value" : "언젠가",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "يوماً ما",
+          "language" : "es",
+          "value" : "día",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -5266,18 +5296,38 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "día",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "pt",
           "value" : "dia",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "zh",
+          "value" : "一天",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "fr",
           "value" : "jour",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "kr",
+          "value" : "언젠가",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "nl",
+          "value" : "dag",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "يوماً ما",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tag",
           "type" : "label"
         } ]
       },
@@ -5317,7 +5367,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MSI"
+      "IRI-based" : "MSI",
+      "en" : "MSI"
     },
     "id" : "242",
     "superClasses" : [ "184" ]
@@ -5351,8 +5402,8 @@
     },
     "label" : {
       "IRI-based" : "DateTimeDescription",
-      "en" : "Date time description",
-      "es" : "Descripción fecha hora"
+      "en" : "Date-Time description",
+      "es" : "descripción de fecha-tiempo"
     },
     "subClasses" : [ "265", "267" ],
     "comment" : {
@@ -5386,7 +5437,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PixelValue"
+      "IRI-based" : "PixelValue",
+      "en" : "Pixel Value"
     },
     "id" : "92"
   }, {
@@ -5478,19 +5530,19 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A temporal entity with an extent or duration",
+        "language" : "es",
+        "value" : "Una entidad temporal con una extensión o duración.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Una entidad temporal con una extensión o duración.",
+        "language" : "en",
+        "value" : "A temporal entity with an extent or duration",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "Interval",
-      "en" : "Time interval",
+      "en" : "Interval",
       "es" : "Intervalo"
     },
     "subClasses" : [ "36" ],
@@ -5521,12 +5573,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -5535,13 +5581,19 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -5627,37 +5679,37 @@
     "baseIri" : "http://www.w3.org/2006/time",
     "instances" : 0,
     "annotations" : {
-      "note" : [ {
-        "identifier" : "note",
-        "language" : "es",
-        "value" : "La pertenencia a la clase 'mes del año' está abierta, a permitir calendarios anuales alternativos y diferentes nombres de meses.",
-        "type" : "label"
-      }, {
-        "identifier" : "note",
-        "language" : "en",
-        "value" : "Membership of the class :MonthOfYear is open, to allow for alternative annual calendars and different month names.",
-        "type" : "label"
-      } ],
       "editorialNote" : [ {
-        "identifier" : "editorialNote",
-        "language" : "es",
-        "value" : "Característica en riesgo - añadida en la revisión de 2017, y no utilizada todavía de forma amplia.",
-        "type" : "label"
-      }, {
         "identifier" : "editorialNote",
         "language" : "en",
         "value" : "Feature at risk - added in 2017 revision, and not yet widely used. ",
         "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "es",
+        "value" : "Característica en riesgo - añadida en la revisión de 2017, y no utilizada todavía de forma amplia.",
+        "type" : "label"
+      } ],
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Membership of the class :MonthOfYear is open, to allow for alternative annual calendars and different month names.",
+        "type" : "label"
+      }, {
+        "identifier" : "note",
+        "language" : "es",
+        "value" : "La pertenencia a la clase 'mes del año' está abierta, a permitir calendarios anuales alternativos y diferentes nombres de meses.",
+        "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The month of the year",
+        "language" : "es",
+        "value" : "El mes del año.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "El mes del año.",
+        "language" : "en",
+        "value" : "The month of the year",
         "type" : "label"
       } ]
     },
@@ -5698,7 +5750,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Pixel"
+      "IRI-based" : "Pixel",
+      "en" : "Pixel"
     },
     "id" : "549"
   }, {
@@ -5761,20 +5814,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Una entidad temporal con extensión o duración distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes.",
+        "language" : "en",
+        "value" : "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different",
+        "language" : "es",
+        "value" : "Una entidad temporal con extensión o duración distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "ProperInterval",
       "en" : "Proper interval",
-      "es" : "intervalo propio"
+      "es" : "Intervalo apropiado"
     },
     "subClasses" : [ "317" ],
     "comment" : {
@@ -5855,10 +5908,11 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Vegetation"
+      "IRI-based" : "Vegetation",
+      "en" : "Vegetation"
     },
-    "id" : "123",
-    "superClasses" : [ "143", "121" ]
+    "id" : "121",
+    "superClasses" : [ "143", "119" ]
   }, {
     "iri" : "http://www.opengis.net/ont/sf#Geometry",
     "baseIri" : "http://www.opengis.net/ont/sf",
@@ -5993,12 +6047,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -6007,13 +6055,19 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -6070,10 +6124,11 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Water"
+      "IRI-based" : "Water",
+      "en" : "Water"
     },
-    "id" : "124",
-    "superClasses" : [ "143", "121" ]
+    "id" : "122",
+    "superClasses" : [ "143", "119" ]
   }, {
     "iri" : "http://www.opengis.net/ont/gml#Polygon",
     "baseIri" : "http://www.opengis.net/ont/gml",
@@ -6094,18 +6149,18 @@
     "id" : "244",
     "superClasses" : [ "175" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "668",
     "label" : {
-      "IRI-based" : "gYear"
+      "IRI-based" : "gMonth"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "670",
     "label" : {
-      "IRI-based" : "gMonth"
+      "IRI-based" : "gYear"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
@@ -6124,7 +6179,7 @@
       "undefined" : "point"
     },
     "comment" : {
-      "undefined" : "A point, typically described using a coordinate system relative to Earth, such as WGS84."
+      "undefined" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
     },
     "attributes" : [ "external" ],
     "id" : "177",
@@ -6134,7 +6189,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Band8A"
+      "IRI-based" : "Band8A",
+      "en" : "Band 8A"
     },
     "id" : "328",
     "superClasses" : [ "93" ]
@@ -6156,13 +6212,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Una posición sobre una línea de tiempo.",
+        "language" : "en",
+        "value" : "A position on a time-line",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A position on a time-line",
+        "language" : "es",
+        "value" : "Una posición sobre una línea de tiempo.",
         "type" : "label"
       } ]
     },
@@ -6202,7 +6258,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "NDVIProcessing"
+      "IRI-based" : "NDVIProcessing",
+      "en" : "NDVI Processing"
     },
     "id" : "384"
   }, {
@@ -6252,7 +6309,7 @@
     "id" : "35",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "40",
@@ -6315,7 +6372,7 @@
     "id" : "114",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "119",
+    "id" : "124",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "126",
@@ -6543,7 +6600,7 @@
     "id" : "315",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "319",
+    "id" : "318",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "322",
@@ -6678,7 +6735,7 @@
     "id" : "393",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "39",
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
     "id" : "397",
@@ -6936,7 +6993,7 @@
     "id" : "540",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "38",
+    "id" : "37",
     "type" : "owl:objectProperty"
   }, {
     "id" : "541",
@@ -7435,7 +7492,7 @@
       "en" : "Link to hdfs\n\nExample: hdfs://192.168.213.52:9000/smartcampus/products/S2A_MSIL2A_20170728T105621_N0205_R094_T30SUF_20170728T110406",
       "es" : "Enlace al hdfs\n\nEjemplo: hdfs://192.168.213.52:9000/smartcampus/products/S2A_MSIL2A_20170728T105621_N0205_R094_T30SUF_20170728T110406"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "17"
   }, {
     "range" : "7",
@@ -7458,6 +7515,37 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
+    "iri" : "http://www.w3.org/2006/time#intervalDuring",
+    "inverse" : "37",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "36",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "If a proper interval T1 is intervalDuring another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Si un intervalo propio T1 está durante otro intervalo propio T2, entonces del principio de T1 está después del principio de T2, y el final de T1 está antes que el final de T2.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "intervalDuring",
+      "en" : "interval during",
+      "es" : "intervalo durante"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "36",
+    "comment" : {
+      "en" : "If a proper interval T1 is intervalDuring another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2.",
+      "es" : "Si un intervalo propio T1 está durante otro intervalo propio T2, entonces del principio de T1 está después del principio de T2, y el final de T1 está antes que el final de T2."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
     "iri" : "http://www.w3.org/2006/time#intervalEquals",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "36",
@@ -7476,8 +7564,8 @@
     },
     "label" : {
       "IRI-based" : "intervalEquals",
-      "en" : "Interval equals",
-      "es" : "Intervalo equivale"
+      "en" : "interval equals",
+      "es" : "intervalo igual"
     },
     "domain" : "36",
     "comment" : {
@@ -7485,38 +7573,7 @@
       "es" : "Si un intervalo propio T1 es igual a otro intervalo propio T2, entonces el principio de T1 coincide con el principio de T2, y el final de T1 coincide con el final de T2."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://www.w3.org/2006/time#intervalDuring",
-    "inverse" : "38",
-    "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "36",
-    "annotations" : {
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "Si un intervalo propio T1 está durante otro intervalo propio T2, entonces del principio de T1 está después del principio de T2, y el final de T1 está antes que el final de T2.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "If a proper interval T1 is intervalDuring another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "intervalDuring",
-      "en" : "Interval during",
-      "es" : "intervalo durante"
-    },
-    "superproperty" : [ "39" ],
-    "domain" : "36",
-    "comment" : {
-      "en" : "If a proper interval T1 is intervalDuring another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is before the end of T2.",
-      "es" : "Si un intervalo propio T1 está durante otro intervalo propio T2, entonces del principio de T1 está después del principio de T2, y el final de T1 está antes que el final de T2."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "37"
+    "id" : "39"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasBeginning",
     "baseIri" : "http://www.w3.org/2006/time",
@@ -7524,13 +7581,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Comienzo de una entidad temporal.",
+        "language" : "en",
+        "value" : "Beginning of a temporal entity.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Beginning of a temporal entity.",
+        "language" : "es",
+        "value" : "Comienzo de una entidad temporal.",
         "type" : "label"
       } ]
     },
@@ -7561,7 +7618,7 @@
       "en" : "Percentage of snow ice\n\nExample: 0.00018899999999999999",
       "es" : "Porcentaje de nieve hielo\n\nEjemplo: 0.00018899999999999999"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "50"
   }, {
     "iri" : "http://aemet.linkeddata.es/ontology/stationName",
@@ -7598,12 +7655,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -7614,6 +7665,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -7768,7 +7825,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "93",
     "label" : {
-      "IRI-based" : "partOfRasterImage"
+      "IRI-based" : "partOfRasterImage",
+      "undefined" : "part of raster image"
     },
     "superproperty" : [ "63" ],
     "domain" : "92",
@@ -7811,20 +7869,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días.",
+        "language" : "en",
+        "value" : "length of, or element of the length of, a temporal extent expressed in days",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of, or element of the length of, a temporal extent expressed in days",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "days",
-      "en" : "days duration",
-      "es" : "duración en días"
+      "en" : "Days",
+      "es" : "Días"
     },
     "maxCardinality" : "1",
     "domain" : "115",
@@ -7837,7 +7895,7 @@
   }, {
     "iri" : "http://aemet.linkeddata.es/ontology/indclim",
     "baseIri" : "http://aemet.linkeddata.es/ontology",
-    "range" : "120",
+    "range" : "125",
     "annotations" : {
       "source" : [ {
         "identifier" : "source",
@@ -7856,7 +7914,7 @@
       "es" : "Indicativo climatológico de la estación meteorológica."
     },
     "attributes" : [ "datatype", "external" ],
-    "id" : "119"
+    "id" : "124"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#sfWithin",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
@@ -7923,7 +7981,7 @@
     "range" : "129",
     "label" : {
       "IRI-based" : "year",
-      "en" : "year",
+      "en" : "Year",
       "es" : "Año"
     },
     "maxCardinality" : "1",
@@ -7963,12 +8021,12 @@
     "id" : "139"
   }, {
     "range" : "143",
-    "domain" : "122",
+    "domain" : "120",
     "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
     "range" : "143",
-    "domain" : "123",
+    "domain" : "121",
     "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
@@ -8005,12 +8063,12 @@
     "id" : "147"
   }, {
     "range" : "143",
-    "domain" : "124",
+    "domain" : "122",
     "attributes" : [ "anonymous", "object" ],
     "id" : "151"
   }, {
     "range" : "143",
-    "domain" : "125",
+    "domain" : "123",
     "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
@@ -8024,8 +8082,8 @@
     "range" : "157",
     "label" : {
       "IRI-based" : "unitType",
-      "en" : "temporal unit type",
-      "es" : "Tipo de unidad"
+      "en" : "Unit type",
+      "es" : "tipo de unidad temporal"
     },
     "cardinality" : "1",
     "domain" : "156",
@@ -8057,20 +8115,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Asume una dirección en el tiempo. Si una entidad temporal T1 está después de otra entidad temporal T2, entonces el principio de T1 está después del final de T2.",
+        "language" : "en",
+        "value" : "Gives directionality to time. If a temporal entity T1 is after another temporal entity T2, then the beginning of T1 is after the end of T2.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Gives directionality to time. If a temporal entity T1 is after another temporal entity T2, then the beginning of T1 is after the end of T2.",
+        "language" : "es",
+        "value" : "Asume una dirección en el tiempo. Si una entidad temporal T1 está después de otra entidad temporal T2, entonces el principio de T1 está después del final de T2.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "after",
       "en" : "After",
-      "es" : "Después"
+      "es" : "después"
     },
     "domain" : "41",
     "subproperty" : [ "165" ],
@@ -8115,12 +8173,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -8131,6 +8183,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -8231,7 +8289,7 @@
       "en" : "The level of the last processing\n\nExample: Level-2A",
       "es" : "El último nivel de procesamiento\n\nEjemplo: Level-2A"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "202"
   }, {
     "range" : "201",
@@ -8269,7 +8327,7 @@
     "label" : {
       "IRI-based" : "timeZone",
       "en" : "in time zone",
-      "es" : "en huso horario"
+      "es" : "Zona horaria"
     },
     "maxCardinality" : "1",
     "domain" : "128",
@@ -8315,7 +8373,7 @@
     "comment" : {
       "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
     },
-    "attributes" : [ "transitive", "symmetric", "object", "external" ],
+    "attributes" : [ "symmetric", "object", "transitive", "external" ],
     "id" : "209"
   }, {
     "range" : "182",
@@ -8341,7 +8399,7 @@
       "en" : "TC (True Color)\n\nCalculated using B04 as red value, B03 as green value and B02 as blue value for each pixel\n\nThis value is the mean of the calculated image\n\nExample: 56.023668417104275",
       "es" : "TC (Color verdadero)\n\nCalculado para Sentinel 2 usando B04 para el valor rojo, B03 para el valor verde y B02 para el valor azul de cada pixel\n\nEste valor es la media de la imagen calculada\n\nEjemplo: 56.023668417104275"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "213"
   }, {
     "iri" : "https://w3id.org/reseo#link_alternative",
@@ -8357,7 +8415,7 @@
       "en" : "Link to the product from https://scihub.copernicus.eu\n\nExample: https://scihub.copernicus.eu/dhus/odata/v1/Products('95bec4b4-a2d4-4b6f-a7cd-1de5cb3e85b7')/",
       "es" : "Enlace al producto en https://scihub.copernicus.eu\n\nEjemplo: https://scihub.copernicus.eu/dhus/odata/v1/Products('95bec4b4-a2d4-4b6f-a7cd-1de5cb3e85b7')/"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "215"
   }, {
     "iri" : "http://www.w3.org/2006/time#intervalMeets",
@@ -8378,8 +8436,8 @@
     },
     "label" : {
       "IRI-based" : "intervalMeets",
-      "en" : "Interval meets",
-      "es" : "Intervalo cumple"
+      "en" : "interval meets",
+      "es" : "intervalo se encuentra"
     },
     "domain" : "36",
     "comment" : {
@@ -8408,7 +8466,7 @@
     },
     "label" : {
       "IRI-based" : "week",
-      "en" : "Week",
+      "en" : "week",
       "es" : "Semana"
     },
     "maxCardinality" : "1",
@@ -8452,13 +8510,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Si un intervalo propio T1 empieza otro intervalo propio T2, entonces del principio de T1 con el final de T2, y el final de T1 es anterior al final de T2.",
+        "language" : "en",
+        "value" : "If a proper interval T1 is intervalStarts another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is before the end of T2.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "If a proper interval T1 is intervalStarts another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is before the end of T2.",
+        "language" : "es",
+        "value" : "Si un intervalo propio T1 empieza otro intervalo propio T2, entonces del principio de T1 con el final de T2, y el final de T1 es anterior al final de T2.",
         "type" : "label"
       } ]
     },
@@ -8467,7 +8525,7 @@
       "en" : "Interval starts",
       "es" : "Intervalo comienza"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "38" ],
     "domain" : "36",
     "comment" : {
       "en" : "If a proper interval T1 is intervalStarts another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is before the end of T2.",
@@ -8631,7 +8689,7 @@
       "en" : "The mission full name of the platform. This name is not a perfect identifier.\n\nExample:Sentinel-2",
       "es" : "El nombre de la missión completo de la plataforma. Este nombre no es un identificador perfecto.\n\nEjemplo: Sentinel-2"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "274"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDateTime",
@@ -8651,19 +8709,19 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Position of an instant, expressed using xsd:dateTime",
+        "language" : "es",
+        "value" : "Posición de un instante, expresado utilizando xsd:dateTime.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de un instante, expresado utilizando xsd:dateTime.",
+        "language" : "en",
+        "value" : "Position of an instant, expressed using xsd:dateTime",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "inXSDDateTime",
-      "en" : "in XSD Date-Time",
+      "en" : "In XSD date time",
       "es" : "Fecha hora en formato XSD"
     },
     "domain" : "42",
@@ -8906,12 +8964,12 @@
       "en" : "Tile identifier to order tiles horizontally.\n\nExample: SF30U",
       "es" : "Identificador de cuadrante para ordenarlos horizontalemente.\n\nEjemplo: SF30U"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "315"
   }, {
     "iri" : "https://w3id.org/reseo#footprint",
     "baseIri" : "https://w3id.org/reseo",
-    "range" : "320",
+    "range" : "319",
     "label" : {
       "IRI-based" : "footprint",
       "en" : "Footprint",
@@ -8922,8 +8980,8 @@
       "en" : "Boundaries of the frame in a simplified form.The coordinates shall be declared in a counter-clockwise order.\n\nExample: \nPOLYGON ((-5.248379903953922 37.02527578563511,-4.014302538465313 37.042247242200354,-4.001451962964202 36.05254100905861,-5.219917191699283 36.03616769808406,-5.248379903953922 37.02527578563511))",
       "es" : "Contorno del marco en formato simplificado. Las coordenadas deben ser declaradas en orden inverso a la agujas del reloj.\n\nEjemplo: \nPOLYGON ((-5.248379903953922 37.02527578563511,-4.014302538465313 37.042247242200354,-4.001451962964202 36.05254100905861,-5.219917191699283 36.03616769808406,-5.248379903953922 37.02527578563511))"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "319"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "318"
   }, {
     "iri" : "https://w3id.org/reseo#isDataSourceOf",
     "baseIri" : "https://w3id.org/reseo",
@@ -8977,13 +9035,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de un instante, expresado utilizando xsd:dateTimeStamp.",
+        "language" : "en",
+        "value" : "Position of an instant, expressed using xsd:dateTimeStamp",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Position of an instant, expressed using xsd:dateTimeStamp",
+        "language" : "es",
+        "value" : "Posición de un instante, expresado utilizando xsd:dateTimeStamp.",
         "type" : "label"
       } ]
     },
@@ -9011,19 +9069,22 @@
     "id" : "342"
   }, {
     "range" : "93",
-    "domain" : "318",
+    "domain" : "320",
     "attributes" : [ "anonymous", "object" ],
     "id" : "345"
   }, {
-    "iri" : "https://w3id.org/reseo#stationID",
+    "iri" : "https://w3id.org/reseo#stationid",
     "baseIri" : "https://w3id.org/reseo",
-    "range" : "334",
+    "range" : "301",
     "label" : {
-      "IRI-based" : "stationID",
-      "en" : "Station ID",
+      "IRI-based" : "stationid",
+      "en" : "Station identifier",
       "es" : "Identificador de estación"
     },
-    "domain" : "59",
+    "domain" : "168",
+    "comment" : {
+      "en" : "Original ground receiving station to which this data was downlinked. All data received from ground stations are archived at the USGS EROS unless otherwise noted. Maps showing these stations can be found at https://landsat.usgs.gov/about_ground_stations.php.\n\nValues:\n    AAA = North America receiving site unknown\n    AA0 = North America receiving site unknown\n    ABG = Awutu Bawjiase, Ghana\n    ABN = Abuja, Nigeria\n    AGS = Poker Flats, Alaska, USA\n    ASA = Alice Springs, Australia\n    ASK = Astana, Kazakhstan\n    ASN = Alice Springs, Australia\n    ATG = Atlanta, Georgia, USA (test site)\n    AWE = Aswan, Egypt\n    BIK = Bishkek, Kyrgyzstan\n    BJC = Beijing, China\n    BKT = Bangkok, Thailand\n    BOC = Bogatá, Colombia\n    CBA = Canberra, Australia\n    CHM = Chetumal, Mexico\n    CLT = Chung-Li, Taiwan\n    CNB = Cuiabá, Brazil\n    COA = Còrdoba, Argentina\n    CPE = Cotopaxi, Ecuador\n    CUB = Cuiabá, Brazil\n    DJK = Daejeon, Korea\n    DKI = Parepare, Indonesia\n    DUB = Dubai, United Arab Emirates\n    DVU = Dunaivtsi, Ukraine\n    DWA = Darwin, Australia\n    EDC = Sioux Falls, South Dakota, USA (aka LGS)\n    EV1 = Eagle Vision 1\n    EV3 = Eagle Vision 3\n    EV4 = Eagle Vision 4\n    FAK = Fairbanks, Alaska, USA\n    FFF = Foreign (non-North American) Receiving Site\n    FUI = Fucino, Italy\n    GDS = Goldstone, California, USA\n    GLC = Gilmore Creek, Alaska, USA\n    GMD = Greenbelt, Maryland, USA\n    GNC = Gatineau, Canada\n    HAJ = Hatoyama, Japan\n    HCA = Datron testing in California, USA\n    HIJ = Hiroshima, Japan\n    HCV = Ho Chi Minh City, Vietnam\n    HLV = Hoa Lac, Vietnam\n    HNV = Hanoi, Vietnam\n    HOA = Hobart, Australia\n    IKR = Irkutsk, Russia\n    ISP = Islamabad, Pakistan\n    IVC = Inuvik, Canada\n    JSA = Hartebeesthoek, South Africa (aka Johannesburg)\n    KHC = KaShi, China\n    KIS = Kiruna, Sweden\n    KLM = Kuala Lumpur, Malaysia\n    KMC = Kunming, China\n    KUJ = Kumamoto, Japan\n    LBG = Libreville, Gabon\n    LGN = Landsat Ground Network (Landsat 8)\n    LGS = Sioux Falls, South Dakota, USA (aka EDC)\n    LUZ = Lusaka, Zambia\n    MCM = Mexico City, Mexico\n    MGR = Magadan, Russia\n    MGS = McMurdo, Antarctica\n    MLK = Malindi, Kenya\n    MOR = Moscow, Russia\n    MPF = Montpelier, France\n    MPS = Maspalomas, Spain\n    MTI = Matera, Italy\n    NOK = Norman, Oklahoma, USA\n    NPA = North Pole, Alaska, USA\n    NP1 = North Pole, Alaska, USA\n    NP2 = North Pole, Alaska, USA\n    NP3 = North Pole, Alaska, USA\n    NP4 = North Pole, Alaska, USA\n    NP5 = North Pole, Alaska, USA\n    NRK = Nairobi, Kenya\n    NSG = Neustrelitz, Germany\n    NSN = Neustrelitz, Germany\n    NWN = Noordwijk, Netherlands\n    OHA = O’Higgins, Antarctica\n    PAC = Prince Albert, Canada\n    PFS = Poker Flats, Alaska, USA\n    PF1 = Poker Flats, Alaska, USA\n    PF2 = Poker Flats, Alaska, USA\n    PUC = Punto Arenas, Chile\n    RPI = Rumpin, Indonesia\n    RSA = Riyadh, Saudi Arabia\n    SAC = Santiago, Chile\n    SEK = Seoul, South, Korea\n    SGI = Shadnagar, India\n    SGP = Singapore\n    SGS = Svalbard, Norway\n    SG1 = Svalbard, Norway\n    SNC = SanYa, China\n    SRT = Si Racha, Thailand\n    TFT = Taipei, Taiwan (fix Location)\n    TGS = Transportable Ground Station\n    TMT = Taipei, Taiwan (mobile location)\n    TOF = Toulouse, France\n    UHI = Honolulu, Hawaii, USA\n    ULK = Ulsan, South Korea\n    ULM = Ulan Bator, Mongolia\n    UPR = Mayagüez, Puerto Rico\n    WPS = Wallops Island, Virginia, USA\n    XX0 = Receiving station unknown\n    XXX = Receiving station unknown"
+    },
     "attributes" : [ "datatype" ],
     "id" : "346"
   }, {
@@ -9040,21 +9101,18 @@
       "en" : "The platform serial identifier is the sequence number of the platform among the mission\n\nExample: Sentinel-2A",
       "es" : "El identificador serial de la plataforma es el número de sequencia de la plataforma junto con la missión\n\nEjemplo: Sentinel-2A"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "347"
   }, {
-    "iri" : "https://w3id.org/reseo#stationid",
+    "iri" : "https://w3id.org/reseo#stationID",
     "baseIri" : "https://w3id.org/reseo",
-    "range" : "301",
+    "range" : "334",
     "label" : {
-      "IRI-based" : "stationid",
-      "en" : "Station identifier",
+      "IRI-based" : "stationID",
+      "en" : "Station ID",
       "es" : "Identificador de estación"
     },
-    "domain" : "168",
-    "comment" : {
-      "en" : "Original ground receiving station to which this data was downlinked. All data received from ground stations are archived at the USGS EROS unless otherwise noted. Maps showing these stations can be found at https://landsat.usgs.gov/about_ground_stations.php.\n\nValues:\n    AAA = North America receiving site unknown\n    AA0 = North America receiving site unknown\n    ABG = Awutu Bawjiase, Ghana\n    ABN = Abuja, Nigeria\n    AGS = Poker Flats, Alaska, USA\n    ASA = Alice Springs, Australia\n    ASK = Astana, Kazakhstan\n    ASN = Alice Springs, Australia\n    ATG = Atlanta, Georgia, USA (test site)\n    AWE = Aswan, Egypt\n    BIK = Bishkek, Kyrgyzstan\n    BJC = Beijing, China\n    BKT = Bangkok, Thailand\n    BOC = Bogatá, Colombia\n    CBA = Canberra, Australia\n    CHM = Chetumal, Mexico\n    CLT = Chung-Li, Taiwan\n    CNB = Cuiabá, Brazil\n    COA = Còrdoba, Argentina\n    CPE = Cotopaxi, Ecuador\n    CUB = Cuiabá, Brazil\n    DJK = Daejeon, Korea\n    DKI = Parepare, Indonesia\n    DUB = Dubai, United Arab Emirates\n    DVU = Dunaivtsi, Ukraine\n    DWA = Darwin, Australia\n    EDC = Sioux Falls, South Dakota, USA (aka LGS)\n    EV1 = Eagle Vision 1\n    EV3 = Eagle Vision 3\n    EV4 = Eagle Vision 4\n    FAK = Fairbanks, Alaska, USA\n    FFF = Foreign (non-North American) Receiving Site\n    FUI = Fucino, Italy\n    GDS = Goldstone, California, USA\n    GLC = Gilmore Creek, Alaska, USA\n    GMD = Greenbelt, Maryland, USA\n    GNC = Gatineau, Canada\n    HAJ = Hatoyama, Japan\n    HCA = Datron testing in California, USA\n    HIJ = Hiroshima, Japan\n    HCV = Ho Chi Minh City, Vietnam\n    HLV = Hoa Lac, Vietnam\n    HNV = Hanoi, Vietnam\n    HOA = Hobart, Australia\n    IKR = Irkutsk, Russia\n    ISP = Islamabad, Pakistan\n    IVC = Inuvik, Canada\n    JSA = Hartebeesthoek, South Africa (aka Johannesburg)\n    KHC = KaShi, China\n    KIS = Kiruna, Sweden\n    KLM = Kuala Lumpur, Malaysia\n    KMC = Kunming, China\n    KUJ = Kumamoto, Japan\n    LBG = Libreville, Gabon\n    LGN = Landsat Ground Network (Landsat 8)\n    LGS = Sioux Falls, South Dakota, USA (aka EDC)\n    LUZ = Lusaka, Zambia\n    MCM = Mexico City, Mexico\n    MGR = Magadan, Russia\n    MGS = McMurdo, Antarctica\n    MLK = Malindi, Kenya\n    MOR = Moscow, Russia\n    MPF = Montpelier, France\n    MPS = Maspalomas, Spain\n    MTI = Matera, Italy\n    NOK = Norman, Oklahoma, USA\n    NPA = North Pole, Alaska, USA\n    NP1 = North Pole, Alaska, USA\n    NP2 = North Pole, Alaska, USA\n    NP3 = North Pole, Alaska, USA\n    NP4 = North Pole, Alaska, USA\n    NP5 = North Pole, Alaska, USA\n    NRK = Nairobi, Kenya\n    NSG = Neustrelitz, Germany\n    NSN = Neustrelitz, Germany\n    NWN = Noordwijk, Netherlands\n    OHA = O’Higgins, Antarctica\n    PAC = Prince Albert, Canada\n    PFS = Poker Flats, Alaska, USA\n    PF1 = Poker Flats, Alaska, USA\n    PF2 = Poker Flats, Alaska, USA\n    PUC = Punto Arenas, Chile\n    RPI = Rumpin, Indonesia\n    RSA = Riyadh, Saudi Arabia\n    SAC = Santiago, Chile\n    SEK = Seoul, South, Korea\n    SGI = Shadnagar, India\n    SGP = Singapore\n    SGS = Svalbard, Norway\n    SG1 = Svalbard, Norway\n    SNC = SanYa, China\n    SRT = Si Racha, Thailand\n    TFT = Taipei, Taiwan (fix Location)\n    TGS = Transportable Ground Station\n    TMT = Taipei, Taiwan (mobile location)\n    TOF = Toulouse, France\n    UHI = Honolulu, Hawaii, USA\n    ULK = Ulsan, South Korea\n    ULM = Ulan Bator, Mongolia\n    UPR = Mayagüez, Puerto Rico\n    WPS = Wallops Island, Virginia, USA\n    XX0 = Receiving station unknown\n    XXX = Receiving station unknown"
-    },
+    "domain" : "59",
     "attributes" : [ "datatype" ],
     "id" : "349"
   }, {
@@ -9111,7 +9169,7 @@
     "comment" : {
       "en" : "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."
     },
-    "attributes" : [ "functional", "object", "external" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "357"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDate",
@@ -9120,13 +9178,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de un instante, expresado utilizando xsd:date.",
+        "language" : "en",
+        "value" : "Position of an instant, expressed using xsd:date",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Position of an instant, expressed using xsd:date",
+        "language" : "es",
+        "value" : "Posición de un instante, expresado utilizando xsd:date.",
         "type" : "label"
       } ]
     },
@@ -9156,7 +9214,7 @@
       "en" : "GVMI (Global Vegetation Moisture Index)\n\nCalculation for Sentinel 2 product: (B8A - B11) / (B8A + B11)\n\nThis value is the mean of the calculated image\n\nExample: -0.02705707",
       "es" : "GVMI (Índice Global de humedad de Vegetación)\n\nCalculo par productos Sentinel2: (B8A - B11) / (B8A + B11)\n\nEste valor es la media de la imagen calculada\n\nExample: -0.02705707"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "360"
   }, {
     "range" : "95",
@@ -9187,7 +9245,7 @@
     },
     "label" : {
       "IRI-based" : "month",
-      "en" : "Month",
+      "en" : "month",
       "es" : "mes"
     },
     "maxCardinality" : "1",
@@ -9228,7 +9286,7 @@
       "en" : "Download link for the product from https://scihub.copernicus.eu\n\nExample: https://scihub.copernicus.eu/dhus/odata/v1/Products('95bec4b4-a2d4-4b6f-a7cd-1de5cb3e85b7')/$value",
       "es" : "Enlace de descarga para el producto en https://scihub.copernicus.eu\n\nEjemplo: https://scihub.copernicus.eu/dhus/odata/v1/Products('95bec4b4-a2d4-4b6f-a7cd-1de5cb3e85b7')/$value"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "372"
   }, {
     "iri" : "https://w3id.org/reseo#title",
@@ -9244,7 +9302,7 @@
       "en" : "Title\n\nExample: S2A_MSIL2A_20170628T105651_N0205_R094_T30SUF_20170628T110445",
       "es" : "Título\n\nEjemplo: S2A_MSIL2A_20170628T105651_N0205_R094_T30SUF_20170628T110445"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "373"
   }, {
     "iri" : "https://w3id.org/reseo#size",
@@ -9260,7 +9318,7 @@
       "en" : "Size of the product\n\nExample: 634.50 MB",
       "es" : "Tamaño del producto\n\nEjemplo: 634.50 MB"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "374"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehDisjoint",
@@ -9285,12 +9343,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -9329,24 +9387,24 @@
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "Feature at risk - added in 2017 revision, and not yet widely used. ",
+        "language" : "es",
+        "value" : "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia.",
         "type" : "label"
       }, {
         "identifier" : "editorialNote",
-        "language" : "es",
-        "value" : "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia.",
+        "language" : "en",
+        "value" : "Feature at risk - added in 2017 revision, and not yet widely used. ",
         "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa.",
+        "language" : "en",
+        "value" : "Supports the association of a temporal entity (instant or interval) to any thing",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Supports the association of a temporal entity (instant or interval) to any thing",
+        "language" : "es",
+        "value" : "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa.",
         "type" : "label"
       } ]
     },
@@ -9398,7 +9456,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "385",
     "label" : {
-      "IRI-based" : "formula"
+      "IRI-based" : "formula",
+      "en" : "formula"
     },
     "domain" : "384",
     "attributes" : [ "datatype" ],
@@ -9417,34 +9476,21 @@
       "en" : "Percentage of vegetation\n\nExample: 10.589334000000001",
       "es" : "Porcentaje de vegetación\n\nEjemplo: 10.589334000000001"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "387"
   }, {
-    "iri" : "http://www.w3.org/2006/time#hours",
+    "iri" : "http://www.w3.org/2006/time#weeks",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "386",
-    "annotations" : {
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of, or element of the length of, a temporal extent expressed in hours",
-        "type" : "label"
-      } ]
-    },
     "label" : {
-      "IRI-based" : "hours",
-      "en" : "Hours",
-      "es" : "duración en horas"
+      "IRI-based" : "weeks",
+      "en" : "Weeks",
+      "es" : "Semanas"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length of, or element of the length of, a temporal extent expressed in hours",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas."
+      "en" : "length of, or element of the length of, a temporal extent expressed in weeks",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en semanas."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "388"
@@ -9468,22 +9514,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -9509,26 +9555,31 @@
     "attributes" : [ "object", "external" ],
     "id" : "389"
   }, {
-    "iri" : "http://www.w3.org/2006/time#seconds",
+    "iri" : "http://www.w3.org/2006/time#minutes",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "390",
     "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://www.bipm.org/en/publications/si-brochure/second.html",
-        "type" : "iri"
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "length, or element of, a temporal extent expressed in minutes",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos.",
+        "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "seconds",
-      "en" : "Seconds",
-      "es" : "Segundos"
+      "IRI-based" : "minutes",
+      "en" : "minutes",
+      "es" : "minutos"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length of, or element of the length of, a temporal extent expressed in seconds",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en segundos."
+      "en" : "length, or element of, a temporal extent expressed in minutes",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "391"
@@ -9552,7 +9603,7 @@
     "label" : {
       "IRI-based" : "hasDateTimeDescription",
       "en" : "has Date-Time description",
-      "es" : "tiene descripción fecha-hora"
+      "es" : "Tiene descripción de fecha hora"
     },
     "domain" : "317",
     "comment" : {
@@ -9580,8 +9631,8 @@
     },
     "label" : {
       "IRI-based" : "dayOfYear",
-      "en" : "day of year",
-      "es" : "día del año"
+      "en" : "Day of year",
+      "es" : "Día del año"
     },
     "maxCardinality" : "1",
     "domain" : "128",
@@ -9598,13 +9649,13 @@
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
-        "language" : "es",
-        "value" : "Esta relación entre intervalos no estaba incluida en las 13 relaciones básicas definidas por Allen (1984), pero se hace referencia a ella como \"una relación importante\" en Allen y Ferguson (1997). Es la unión disjunta de 'intervalo empieza', 'intervalo durante' y con 'intervalo termina'. Sin embargo, esto está fuera de la expresividad de OWL2, por tanto, se implementa como una propiedad explícita, con 'intervalo empieza', 'intervalo durante' e 'intervalo termina' como sub-propiedades.",
+        "language" : "en",
+        "value" : "This interval relation is not included in the 13 basic relationships defined in Allen (1984), but is referred to as 'an important relationship' in Allen and Ferguson (1997). It is the disjoint union of :intervalStarts v :intervalDuring v :intervalFinishes . However, that is outside OWL2 expressivity, so is implemented as an explicit property, with :intervalStarts , :intervalDuring , :intervalFinishes as sub-properties",
         "type" : "label"
       }, {
         "identifier" : "note",
-        "language" : "en",
-        "value" : "This interval relation is not included in the 13 basic relationships defined in Allen (1984), but is referred to as 'an important relationship' in Allen and Ferguson (1997). It is the disjoint union of :intervalStarts v :intervalDuring v :intervalFinishes . However, that is outside OWL2 expressivity, so is implemented as an explicit property, with :intervalStarts , :intervalDuring , :intervalFinishes as sub-properties",
+        "language" : "es",
+        "value" : "Esta relación entre intervalos no estaba incluida en las 13 relaciones básicas definidas por Allen (1984), pero se hace referencia a ella como \"una relación importante\" en Allen y Ferguson (1997). Es la unión disjunta de 'intervalo empieza', 'intervalo durante' y con 'intervalo termina'. Sin embargo, esto está fuera de la expresividad de OWL2, por tanto, se implementa como una propiedad explícita, con 'intervalo empieza', 'intervalo durante' e 'intervalo termina' como sub-propiedades.",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -9625,13 +9676,13 @@
       "es" : "intervalo interior"
     },
     "domain" : "36",
-    "subproperty" : [ "395", "232", "37" ],
+    "subproperty" : [ "395", "232", "35" ],
     "comment" : {
       "en" : "If a proper interval T1 is intervalIn another proper interval T2, then the beginning of T1 is after the beginning of T2 or is coincident with the beginning of T2, and the end of T1 is before the end of T2, or is coincident with the end of T2, except that end of T1 may not be coincident with the end of T2 if the beginning of T1 is coincident with the beginning of T2.",
       "es" : "Si un intervalo propio T1 es un intervalo interior a otro intervalo propio T2, entonces el principio de T1 está después del principio de T2 o coincide con el principio de T2, y el final de T1 está antes que el final de T2, o coincide con el final de T2, excepto que el final de T1 puede no coincidir con el final de T2 si el principio de T1 coincide con el principio de T2."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "39"
+    "id" : "38"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#sfDisjoint",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
@@ -9652,22 +9703,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -9693,18 +9744,31 @@
     "attributes" : [ "object", "external" ],
     "id" : "397"
   }, {
-    "iri" : "http://www.w3.org/2006/time#years",
+    "iri" : "http://www.w3.org/2006/time#hours",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "399",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "length of, or element of the length of, a temporal extent expressed in hours",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "years",
-      "en" : "Years",
-      "es" : "Años"
+      "IRI-based" : "hours",
+      "en" : "Hours",
+      "es" : "Horas"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length of, or element of the length of, a temporal extent expressed in years",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en años."
+      "en" : "length of, or element of the length of, a temporal extent expressed in hours",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "398"
@@ -9715,20 +9779,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas.",
+        "language" : "en",
+        "value" : "length of, or element of the length of, a temporal extent expressed in hours",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of, or element of the length of, a temporal extent expressed in hours",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en horas.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "hours",
       "en" : "Hours",
-      "es" : "duración en horas"
+      "es" : "Horas"
     },
     "maxCardinality" : "1",
     "domain" : "115",
@@ -9758,7 +9822,7 @@
     },
     "label" : {
       "IRI-based" : "intervalFinishedBy",
-      "en" : "Interval finished by",
+      "en" : "interval finished by",
       "es" : "Intervalo finalizado por"
     },
     "domain" : "36",
@@ -9769,60 +9833,55 @@
     "attributes" : [ "object", "external" ],
     "id" : "403"
   }, {
-    "iri" : "http://www.w3.org/2006/time#months",
+    "iri" : "http://www.w3.org/2006/time#days",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "405",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses.",
+        "language" : "en",
+        "value" : "length of, or element of the length of, a temporal extent expressed in days",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of, or element of the length of, a temporal extent expressed in months",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "months",
-      "en" : "months duration",
-      "es" : "Meses"
+      "IRI-based" : "days",
+      "en" : "Days",
+      "es" : "Días"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length of, or element of the length of, a temporal extent expressed in months",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses."
+      "en" : "length of, or element of the length of, a temporal extent expressed in days",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "404"
   }, {
-    "iri" : "http://www.w3.org/2006/time#minutes",
+    "iri" : "http://www.w3.org/2006/time#seconds",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "402",
     "annotations" : {
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "length, or element of, a temporal extent expressed in minutes",
-        "type" : "label"
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.bipm.org/en/publications/si-brochure/second.html",
+        "type" : "iri"
       } ]
     },
     "label" : {
-      "IRI-based" : "minutes",
-      "en" : "Minutes",
-      "es" : "minutos"
+      "IRI-based" : "seconds",
+      "en" : "seconds duration",
+      "es" : "Segundos"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length, or element of, a temporal extent expressed in minutes",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos."
+      "en" : "length of, or element of the length of, a temporal extent expressed in seconds",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en segundos."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "407"
@@ -9842,47 +9901,47 @@
     "attributes" : [ "datatype" ],
     "id" : "408"
   }, {
-    "iri" : "http://www.w3.org/2006/time#days",
+    "iri" : "http://www.w3.org/2006/time#months",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "410",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días.",
+        "language" : "en",
+        "value" : "length of, or element of the length of, a temporal extent expressed in months",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of, or element of the length of, a temporal extent expressed in days",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "days",
-      "en" : "days duration",
-      "es" : "duración en días"
+      "IRI-based" : "months",
+      "en" : "Months",
+      "es" : "duración en meses"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length of, or element of the length of, a temporal extent expressed in days",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en días."
+      "en" : "length of, or element of the length of, a temporal extent expressed in months",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "409"
   }, {
-    "iri" : "http://www.w3.org/2006/time#weeks",
+    "iri" : "http://www.w3.org/2006/time#years",
     "baseIri" : "http://www.w3.org/2006/time",
     "range" : "406",
     "label" : {
-      "IRI-based" : "weeks",
-      "en" : "weeks duration",
-      "es" : "Semanas"
+      "IRI-based" : "years",
+      "en" : "Years",
+      "es" : "Años"
     },
     "domain" : "118",
     "comment" : {
-      "en" : "length of, or element of the length of, a temporal extent expressed in weeks",
-      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en semanas."
+      "en" : "length of, or element of the length of, a temporal extent expressed in years",
+      "es" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en años."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "411"
@@ -9900,7 +9959,7 @@
       "en" : "Product type\n\nExample: S2MSI2A",
       "es" : "Tipo del producto\n\nEjemplo: S2MSI2A"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "412"
   }, {
     "iri" : "https://w3id.org/reseo#cloudcoverpercentage",
@@ -9916,7 +9975,7 @@
       "en" : "Cloud cover percentage.\n\nExample: 3.8478",
       "es" : "Porcentaje de cobertura de nubes.\n\nEjemplo: 3.8478"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "413"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#closeMatch",
@@ -9965,7 +10024,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "323",
     "label" : {
-      "IRI-based" : "partOfProduct"
+      "IRI-based" : "partOfProduct",
+      "undefined" : "part of product"
     },
     "superproperty" : [ "63" ],
     "domain" : "93",
@@ -10033,14 +10093,15 @@
       "en" : "The short name of the instrument used for acquiring the data.\n\nExample: MSI",
       "es" : "Abreviación del nombre del instrumento usado para la recogida de datos\n\nExample: MSI"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "433"
   }, {
     "iri" : "https://w3id.org/reseo#hasSensor",
     "baseIri" : "https://w3id.org/reseo",
     "range" : "242",
     "label" : {
-      "IRI-based" : "hasSensor"
+      "IRI-based" : "hasSensor",
+      "undefined" : "has sensor"
     },
     "superproperty" : [ "63" ],
     "domain" : "254",
@@ -10118,7 +10179,7 @@
       "en" : "Orbit direccion while taking he product\n\nCan be either 'ASCENDING' or 'DESCENDING'\n\nExample: 'ASCENDING'",
       "es" : "Dirección de la órbita durante la captura del producto.\n\nPuede ser 'ASCENDING' o 'DESCENDING'\n\nEjemplo: 'ASCENDING'"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "448"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehEquals",
@@ -10140,6 +10201,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -10150,12 +10217,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10212,22 +10273,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10287,7 +10348,7 @@
     "label" : {
       "IRI-based" : "inDateTime",
       "en" : "In date time",
-      "es" : "En fecha hora"
+      "es" : "en descripción de fecha-hora"
     },
     "superproperty" : [ "454" ],
     "domain" : "42",
@@ -10329,7 +10390,7 @@
     "superproperty" : [ "11" ],
     "domain" : "64",
     "subproperty" : [ "236" ],
-    "attributes" : [ "transitive", "object", "external" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "14"
   }, {
     "iri" : "https://w3id.org/reseo#productformat",
@@ -10345,7 +10406,7 @@
       "en" : "Format of the product\n\nExample: SAFE",
       "es" : "Formato del producto\n\nEjemplo: SAFE"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "455"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#hasSerialization",
@@ -10473,7 +10534,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "384",
     "label" : {
-      "IRI-based" : "processedBy"
+      "IRI-based" : "processedBy",
+      "undefined" : "processed by"
     },
     "superproperty" : [ "63" ],
     "domain" : "251",
@@ -10493,7 +10555,7 @@
       "en" : "The processing baseline\n\nExample: 2.08",
       "es" : "La línea base del procesado\n\nEjemplo: 2.08"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "471"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
@@ -10539,7 +10601,7 @@
       "en" : "Universally unique identifier\n\nExample: 20f35b69-4eb1-49f1-be5f-b55cec37ea66",
       "es" : "Identificador único universal\n\nEjemplo: 20f35b69-4eb1-49f1-be5f-b55cec37ea66"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "476"
   }, {
     "iri" : "https://w3id.org/reseo#waterpercentage",
@@ -10555,7 +10617,7 @@
       "en" : "Water of percentage\n\nExample: 15.87375",
       "es" : "Porcentaje de agua\n\nEjemplo: 15.87375"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "481"
   }, {
     "iri" : "https://w3id.org/reseo#s2datatakeid",
@@ -10571,7 +10633,7 @@
       "en" : "The file name provided by ESA for the continuous acquisition of an image from a SENTINEL-2 satellite in a given MSI imaging mode or a \"datatake\".\n\nFormat:\n    GMMM_YYYYMMDDTHHMMSS_Affffff_Nxx.yy\n\n    G = Datatake Identifier\n    MMM = Mission ID: S2A or S2B\n    YYYYMMDDTHHMMSS = Acquisition Start Date and Time\n    Affffff = Absolute Orbit Number\n    Nxx.yy = Vendor Software Version\n\nExample: GS2A_20180603T110041_015392_N02.06",
       "es" : "El nombre del archivo recibido por ESA para la acquisición continua de una imagen de un satélite Sentinel-2 en un modo MSI dado o una \"toma de datos\"\n\nFormato:\n    GMMM_YYYYMMDDTHHMMSS_Affffff_Nxx.yy\n\n    G = identificador de toma de datos\n    MMM = ID de misión: S2A o S2B\n    YYYYMMDDTHHMMSS = Fecha y hora de inicio de la acquisición\n    Affffff = Número de órbita absoluto\n    Nxx.yy = Versión del software del vendedor\n\nEjemplo: GS2A_20180603T110041_015392_N02.06"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "482"
   }, {
     "iri" : "https://w3id.org/reseo#isDateOf",
@@ -10587,7 +10649,7 @@
       "en" : "Is date of something (usually a product)",
       "es" : "Es fecha de algo (normalmente un producto)"
     },
-    "attributes" : [ "inverse functional", "object" ],
+    "attributes" : [ "object", "inverse functional" ],
     "id" : "483"
   }, {
     "iri" : "https://w3id.org/reseo#orientation",
@@ -10687,12 +10749,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -10731,13 +10793,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The day of week, whose value is a member of the class time:DayOfWeek",
+        "language" : "es",
+        "value" : "El día de la semana, cuyo valor es un miembro de la clase 'día de la semana'.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "El día de la semana, cuyo valor es un miembro de la clase 'día de la semana'.",
+        "language" : "en",
+        "value" : "The day of week, whose value is a member of the class time:DayOfWeek",
         "type" : "label"
       } ]
     },
@@ -10774,22 +10836,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10828,7 +10890,7 @@
       "en" : "Identifier\n\nExample: S2A_MSIL1C_20180603T110041_N0206_R094_T30SUF_20180603T130559",
       "es" : "Identificador\n\nEjemplo: S2A_MSIL1C_20180603T110041_N0206_R094_T30SUF_20180603T130559"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "496"
   }, {
     "iri" : "https://w3id.org/reseo#tileid",
@@ -10844,7 +10906,7 @@
       "en" : "Extract tile identifier (MGRS encoded). If more than one tile is present in the user product, first one is selected.\n\nExample: 30SUF",
       "es" : "Extraer identificador de cuadrante (codificado MGRS). Si hay más de un cuadrante en el producto del usuario, se selecciona el primero\n\nEjemplo: 30SUF"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "497"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#asGML",
@@ -10866,6 +10928,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -10876,12 +10944,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10926,6 +10988,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -10936,12 +11004,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10980,7 +11042,7 @@
       "en" : "Acquisition start date time, i.e. time of the oldest data within the product.\nFormat standard: YYYY-MM-DD hh:mm\n\nExample: 2018-06-28 10:56",
       "es" : "Fecha y hora del comienzo de la adquisición. La fecha y hora de los datos más antiguos del producto.\nFormato estándar: YYYY-MM-DD hh:mm\n\nEjemplo:2018-06-28 10:56"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "500"
   }, {
     "iri" : "https://w3id.org/reseo#endposition",
@@ -10996,7 +11058,7 @@
       "en" : "Acquisition end date time, i.e. time of the most recent data within the product.\nFormat standard: YYYY-MM-DDThh:mm:ss.mmmZ\n\nExample: 2018-06-28T10:56:19.024Z",
       "es" : "Fecha y hora del final de la adquisición. La fecha y hora de los datos más recientes del producto.\nFormato estándar: YYYY-MM-DDThh:mm:ss.mmmZ\n\nEjemplo:2018-06-28T10:56:19.024Z"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "501"
   }, {
     "iri" : "http://www.w3.org/2006/time#weeks",
@@ -11004,7 +11066,7 @@
     "range" : "457",
     "label" : {
       "IRI-based" : "weeks",
-      "en" : "weeks duration",
+      "en" : "Weeks",
       "es" : "Semanas"
     },
     "maxCardinality" : "1",
@@ -11044,7 +11106,7 @@
       "en" : "Absolute orbit number to which the oldest data unit of the product refers\n\nExample: 5525",
       "es" : "Número de órbita absoluto al que se refieren los datos más antiguos del producto\n\nEjemplo: 5525"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "504"
   }, {
     "iri" : "https://w3id.org/reseo#landsatsceneid",
@@ -11081,7 +11143,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "297",
     "label" : {
-      "IRI-based" : "value"
+      "IRI-based" : "value",
+      "en" : "value"
     },
     "domain" : "92",
     "attributes" : [ "datatype" ],
@@ -11156,19 +11219,19 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de minuto en un sistema calendario-reloj.",
+        "language" : "en",
+        "value" : "Minute position in a calendar-clock system.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Minute position in a calendar-clock system.",
+        "language" : "es",
+        "value" : "Posición de minuto en un sistema calendario-reloj.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "minute",
-      "en" : "minute",
+      "en" : "Minute",
       "es" : "minuto"
     },
     "maxCardinality" : "1",
@@ -11265,7 +11328,7 @@
       "en" : "Boundaries of the frame. In addition to the constraints imposed by the GML type for linear rings, the coordinates shall be declared in a counter-clockwise order.\n\nExample: \n<gml:Polygon srsName=\"http://www.opengis.net/gml/srs/epsg.xml#4326\" xmlns:gml=\"http://www.opengis.net/gml\">\n   <gml:outerBoundaryIs>\n      <gml:LinearRing>\n         <gml:coordinates>37.02527578563511,-5.248379903953922 37.042247242200354,-4.014302538465313 36.05254100905861,-4.001451962964202 36.03616769808406,-5.219917191699283 37.02527578563511,-5.248379903953922</gml:coordinates>\n      </gml:LinearRing>\n   </gml:outerBoundaryIs>\n</gml:Polygon>",
       "es" : "Contorno del marco. Además de las restrincciones impuestas por el tipo GML para anillos lineales, las coordenadas deben ser declaradas en orden inverso a la agujas del reloj.\n\nEjemplo: \n<gml:Polygon srsName=\"http://www.opengis.net/gml/srs/epsg.xml#4326\" xmlns:gml=\"http://www.opengis.net/gml\">\n   <gml:outerBoundaryIs>\n      <gml:LinearRing>\n         <gml:coordinates>37.02527578563511,-5.248379903953922 37.042247242200354,-4.014302538465313 36.05254100905861,-4.001451962964202 36.03616769808406,-5.219917191699283 37.02527578563511,-5.248379903953922</gml:coordinates>\n      </gml:LinearRing>\n   </gml:outerBoundaryIs>\n</gml:Polygon>"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "519"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#rcc8po",
@@ -11402,7 +11465,7 @@
       "en" : "Univocally identifies the platform. The exact syntax and lexical space of this identifier is defined by the World Data Center for Satellite Information (WDC-SI), which depends on the NASA’s National Space Science Data Center. For each platform, the exact identifier is available from the mission name at the address: http://nssdc.gsfc.nasa.gov/nmc/sc-query.html.\n\nExample: 2015-028A",
       "es" : "Identifica unívocamente la plataforma. La sintaxis exacta y el espacio léxico de este identificador están definidos por el Centro Mundial de Datos para Información Satelital (WDC-SI), que depende del Centro Nacional de Datos de Ciencia Espacial de la NASA. Para cada plataforma, el identificador exacto está disponible en el nombre de la misión en la dirección: http://nssdc.gsfc.nasa.gov/nmc/sc-query.html.\n\nEjemplo: 2015-028A"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "525"
   }, {
     "iri" : "https://w3id.org/reseo#moisture_image",
@@ -11434,7 +11497,7 @@
       "en" : "Link to a low resolution image of the product on https://scihub.copernicus.eu\n\nExample: https://scihub.copernicus.eu/dhus/odata/v1/Products('95bec4b4-a2d4-4b6f-a7cd-1de5cb3e85b7')/Products('Quicklook')/$value",
       "es" : "Enlace a una imagen de baja resolución del producto en https://scihub.copernicus.eu\n\nExample: https://scihub.copernicus.eu/dhus/odata/v1/Products('95bec4b4-a2d4-4b6f-a7cd-1de5cb3e85b7')/Products('Quicklook')/$value"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "527"
   }, {
     "iri" : "http://aemet.linkeddata.es/ontology/valueOfObservedData",
@@ -11459,25 +11522,25 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "If a proper interval T1 is intervalAfter another proper interval T2, then the beginning of T1 is after the end of T2.",
+        "language" : "es",
+        "value" : "Si un intervalo propio T1 es posterior a otro intervalo propio T2, entonces el principio de T1 está después que el final de T2.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Si un intervalo propio T1 es posterior a otro intervalo propio T2, entonces el principio de T1 está después que el final de T2.",
+        "language" : "en",
+        "value" : "If a proper interval T1 is intervalAfter another proper interval T2, then the beginning of T1 is after the end of T2.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "intervalAfter",
-      "en" : "interval after",
+      "en" : "Interval after",
       "es" : "Intervalo después"
     },
     "superproperty" : [ "530", "164" ],
     "domain" : "36",
     "comment" : {
-      "en" : "If a proper interval T1 is intervalAfter another proper interval T2, then the beginning of T1 is after the end of T2.",
+      "en" : "Interval after",
       "undefined" : "Si un intervalo propio T1 es posterior a otro intervalo propio T2, entonces el principio de T1 está después que el final de T2."
     },
     "attributes" : [ "object", "external" ],
@@ -11489,20 +11552,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Hour position in a calendar-clock system.",
+        "language" : "es",
+        "value" : "Posición de hora en un sistema calendario-reloj.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de hora en un sistema calendario-reloj.",
+        "language" : "en",
+        "value" : "Hour position in a calendar-clock system.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "hour",
       "en" : "hour",
-      "es" : "Hora"
+      "es" : "hora"
     },
     "maxCardinality" : "1",
     "domain" : "128",
@@ -11586,7 +11649,7 @@
       "en" : "Represents the time when the product is indexed in the DHuS Service databases. Time is in UTC.\nFormat standard: YYYY-MM-DD hh:mm\n\nExample: 2018-06-28 16:38",
       "es" : "Representa la fecha y hora en la que el producto fue indexado por el Servicio de base de datos DHuS. La hora está en UTC.\nFormato estándar: YYYY-MM-DD hh:mm\n\nExample: 2018-06-28 16:38"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "533"
   }, {
     "iri" : "http://www.w3.org/2006/time#xsdDateTime",
@@ -11607,8 +11670,8 @@
     },
     "label" : {
       "IRI-based" : "xsdDateTime",
-      "en" : "XSD Date Time",
-      "es" : "Fecha hora XSD"
+      "en" : "has XSD date-time",
+      "es" : "tiene fecha-hora XSD"
     },
     "domain" : "317",
     "comment" : {
@@ -11624,20 +11687,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses.",
+        "language" : "en",
+        "value" : "length of, or element of the length of, a temporal extent expressed in months",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of, or element of the length of, a temporal extent expressed in months",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en meses.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "months",
-      "en" : "months duration",
-      "es" : "Meses"
+      "en" : "Months",
+      "es" : "duración en meses"
     },
     "maxCardinality" : "1",
     "domain" : "115",
@@ -11723,21 +11786,6 @@
     "attributes" : [ "datatype" ],
     "id" : "537"
   }, {
-    "iri" : "https://w3id.org/reseo#origin",
-    "baseIri" : "https://w3id.org/reseo",
-    "range" : "31",
-    "label" : {
-      "IRI-based" : "origin",
-      "en" : "Origin",
-      "es" : "Origen"
-    },
-    "domain" : "168",
-    "comment" : {
-      "en" : "Origin of the image\n\nValues:\nExample: \"Image courtesy of the U.S. Geological Survey\""
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "538"
-  }, {
     "iri" : "https://w3id.org/reseo#instrumentname",
     "baseIri" : "https://w3id.org/reseo",
     "range" : "520",
@@ -11751,7 +11799,22 @@
       "en" : "The instrument name used for acquiring the data.\n\nExample: Multi-Spectral Instrument",
       "es" : "Nombre del instrumento usado para la recogida de datos\n\nEjemplo: Multi-Spectral Instrument"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "538"
+  }, {
+    "iri" : "https://w3id.org/reseo#origin",
+    "baseIri" : "https://w3id.org/reseo",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "origin",
+      "en" : "Origin",
+      "es" : "Origen"
+    },
+    "domain" : "168",
+    "comment" : {
+      "en" : "Origin of the image\n\nValues:\nExample: \"Image courtesy of the U.S. Geological Survey\""
+    },
+    "attributes" : [ "datatype" ],
     "id" : "539"
   }, {
     "iri" : "https://w3id.org/reseo#datatakesensingstart",
@@ -11767,7 +11830,7 @@
       "en" : "Datatake start date time, i.e time of the oldest data within the datatake.\nFormat standard: YYYY-MM-DDThh:mm:ss.mmmZ\n\nExample: 2018-06-28T10:56:19.024Z",
       "es" : "Inicio de la detección de toma de datos. La fecha y hora de los datos más antiguos dentro de la toma de datos.\nFormato estándar: YYYY-MM-DDThh:mm:ss.mmmZ"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "540"
   }, {
     "iri" : "http://www.w3.org/2006/time#intervalContains",
@@ -11788,8 +11851,8 @@
     },
     "label" : {
       "IRI-based" : "intervalContains",
-      "en" : "Interval contains",
-      "es" : "intervalo contiene"
+      "en" : "interval contains",
+      "es" : "Intervalo contiene"
     },
     "domain" : "36",
     "comment" : {
@@ -11797,7 +11860,7 @@
       "es" : "Si un intervalo propio T1 contiene otro intervalo propio T2, entonces el principio de T1 está antes que el principio de T2, y el final de T1 está después del final de T2."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "38"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/reseo#landsatproductid",
     "baseIri" : "https://w3id.org/reseo",
@@ -11827,7 +11890,7 @@
       "en" : "NDSI (Normalized Difference Snow Index)\n\nCalculation for Sentinel 2 product: (B03 - B11) / (B03 + B11)\n\nThis value is the mean of the calculated image\n\nExample: 0.0",
       "es" : "NDSI (Índice de diferencia de nieve normalizado)\n\nCalculo para productos Sentinel 2: (B03 - B11) / (B03 + B11)\n\nEste valor es la media de la imagen calculada\n\nEjemplo: 0.0"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "542"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
@@ -11844,7 +11907,7 @@
     "domain" : "248",
     "subproperty" : [ "543" ],
     "comment" : {
-      "undefined" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping ."
+      "undefined" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
     },
     "attributes" : [ "object", "external" ],
     "id" : "517"
@@ -11862,7 +11925,7 @@
       "en" : "Summary of the product. Includes date, instrument, sensor mode, satellite and size\n\nExample: Date: 2017-09-26T10:58:11.026Z, Instrument: MSI, Mode: , Satellite: Sentinel-2, Size: 699.32 MB",
       "es" : "Resumen del producto. incluye fecha, instrumento, modo del sensor, satélite y  tamaño\n\nEjemplo: Date: 2017-09-26T10:58:11.026Z, Instrument: MSI, Mode: , Satellite: Sentinel-2, Size: 699.32 MB"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "545"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasDuration",
@@ -11899,7 +11962,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "92",
     "label" : {
-      "IRI-based" : "hasValue"
+      "IRI-based" : "hasValue",
+      "undefined" : "has value"
     },
     "superproperty" : [ "63" ],
     "domain" : "549",
@@ -11979,7 +12043,7 @@
       "en" : "Low proba clouds percentage\n\nExample: 1.868199",
       "es" : "Porcentaje de nubes bajas\n\nEjemplo: 1.868199"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "551"
   }, {
     "iri" : "http://www.w3.org/2006/time#before",
@@ -12001,7 +12065,7 @@
     },
     "label" : {
       "IRI-based" : "before",
-      "en" : "Before",
+      "en" : "before",
       "es" : "antes"
     },
     "domain" : "41",
@@ -12010,7 +12074,7 @@
       "en" : "Gives directionality to time. If a temporal entity T1 is before another temporal entity T2, then the end of T1 is before the beginning of T2. Thus, \"before\" can be considered to be basic to instants and derived for intervals.",
       "es" : "Asume una dirección en el tiempo. Si una entidad temporal T1 está antes que otra entidad temporal T2, entonces el final de T1 está antes que el principio de T2. Así, \"antes\" se puede considerar básica para instantes y derivada para intervalos."
     },
-    "attributes" : [ "transitive", "object", "external" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "552"
   }, {
     "iri" : "http://www.w3.org/2006/time#second",
@@ -12052,19 +12116,19 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "If a proper interval T1 is intervalMetBy another proper interval T2, then the beginning of T1 is coincident with the end of T2.",
+        "language" : "es",
+        "value" : "Si un intervalo propio T1 es 'intervalo encontrado por' otro intervalo propio T2, entonces el principio de T1 coincide con el final de T2.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Si un intervalo propio T1 es 'intervalo encontrado por' otro intervalo propio T2, entonces el principio de T1 coincide con el final de T2.",
+        "language" : "en",
+        "value" : "If a proper interval T1 is intervalMetBy another proper interval T2, then the beginning of T1 is coincident with the end of T2.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "intervalMetBy",
-      "en" : "interval met by",
+      "en" : "Interval met by",
       "es" : "intervalo encontrado por"
     },
     "domain" : "36",
@@ -12104,13 +12168,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Extensión de una entidad temporal, expresada utilizando xsd:duration.",
+        "language" : "en",
+        "value" : "Extent of a temporal entity, expressed using xsd:duration",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Extent of a temporal entity, expressed using xsd:duration",
+        "language" : "es",
+        "value" : "Extensión de una entidad temporal, expresada utilizando xsd:duration.",
         "type" : "label"
       } ]
     },
@@ -12228,9 +12292,9 @@
     "label" : {
       "IRI-based" : "intervalFinishes",
       "en" : "Interval finishes",
-      "es" : "Intervalo finaliza"
+      "es" : "intervalo termina"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "38" ],
     "domain" : "36",
     "comment" : {
       "en" : "If a proper interval T1 is intervalFinishes another proper interval T2, then the beginning of T1 is after the beginning of T2, and the end of T1 is coincident with the end of T2.",
@@ -12342,7 +12406,7 @@
       "en" : "Bare soil percentage\n\nExample: 35.747452",
       "es" : "Porcentaje de suelo desnudo\n\nEjemplo: 35.747452"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "562"
   }, {
     "iri" : "https://w3id.org/reseo#ndvi",
@@ -12358,7 +12422,7 @@
       "en" : "NDVI (Normalized Difference Vegetation Index)\n\nCalculation for Sentinel 2 product: (B08 - B04) / (B08 + B04)\n\nThis value is the mean of the calculated image\n\nExample: 0.14262335",
       "es" : "NDVI (Índice de diferencia de vegetación normalizado)\n\nCalculo para productos Sentinel 2: (B08 - B04) / (B08 + B04)\n\nEste valor es la media de la imagen calculada\n\nEjemplo: 0.14262335"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "563"
   }, {
     "iri" : "https://w3id.org/reseo#ndvi_image",
@@ -12446,7 +12510,7 @@
     },
     "label" : {
       "IRI-based" : "seconds",
-      "en" : "Seconds",
+      "en" : "seconds duration",
       "es" : "Segundos"
     },
     "maxCardinality" : "1",
@@ -12471,7 +12535,7 @@
       "en" : "Package file name, with extension ‘.SAFE’.\n\nExample: S2B_MSIL2A_20180628T105619_N0208_R094_T30SUF_20180628T151421.SAFE",
       "es" : "Nombre del paquete de archivos, con extensión ‘.SAFE’.\n\nEjemplo: S2B_MSIL2A_20180628T105619_N0208_R094_T30SUF_20180628T151421.SAFE"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "571"
   }, {
     "range" : "175",
@@ -12558,22 +12622,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -12678,7 +12742,7 @@
       "en" : "Something (usually a product) has date",
       "es" : "Algo (normalmente un producto) tiene una fecha"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "586"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#rcc8ntppi",
@@ -12700,6 +12764,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -12710,12 +12780,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -12754,7 +12818,7 @@
       "en" : "Medium proba clouds percentage\n\nExample: 0.577722",
       "es" : "Porcentaje de nubers medias\n\nEjemplo: 0.577722"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "588"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasEnd",
@@ -12775,7 +12839,7 @@
     },
     "label" : {
       "IRI-based" : "hasEnd",
-      "en" : "Has end",
+      "en" : "has end",
       "es" : "tiene fin"
     },
     "superproperty" : [ "43" ],
@@ -12806,13 +12870,13 @@
     },
     "label" : {
       "IRI-based" : "intervalOverlaps",
-      "en" : "Interval overlaps",
+      "en" : "interval overlaps",
       "es" : "Intervalo solapa"
     },
     "domain" : "36",
     "comment" : {
       "en" : "If a proper interval T1 is intervalOverlaps another proper interval T2, then the beginning of T1 is before the beginning of T2, the end of T1 is after the beginning of T2, and the end of T1 is before the end of T2.",
-      "es" : "Asume una dirección en el tiempo. Si una entidad temporal T1 está después de otra entidad temporal T2, entonces el principio de T1 está después del final de T2."
+      "es" : "Si un intervalo propio T1 se solapa con otro intervalo propio T2, entonces el principio de T1 es anterior al principio de T2, el final de T1 es posterior al principio de T2, y el final de T1 es anterior al final de T2."
     },
     "attributes" : [ "object", "external" ],
     "id" : "589"
@@ -12830,14 +12894,15 @@
       "en" : "EVI (Enhaced vegetation index)\n\nCalculation for Sentinel 2 product: 2.5 * (B08 - B04) / ((B08 + 6 * B04 - 7.5 * B02) + 1)\n\nThis value is the mean of the calculated image\n\nExample: 0.27742198",
       "es" : "EVI (Índice de vegetación mejorado)\n\nCalculo para productos Sentinel 2: 2.5 * (B08 - B04) / ((B08 + 6 * B04 - 7.5 * B02) + 1)\n\nEste valor es la media de la imagen calculada\n\nEjemplo: 0.27742198"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "591"
   }, {
     "iri" : "https://w3id.org/reseo#row",
     "baseIri" : "https://w3id.org/reseo",
     "range" : "352",
     "label" : {
-      "IRI-based" : "row"
+      "IRI-based" : "row",
+      "en" : "row"
     },
     "domain" : "549",
     "attributes" : [ "datatype" ],
@@ -12897,22 +12962,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -13108,19 +13173,19 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos.",
+        "language" : "en",
+        "value" : "length, or element of, a temporal extent expressed in minutes",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length, or element of, a temporal extent expressed in minutes",
+        "language" : "es",
+        "value" : "Longitud de, o elemento de la longitud de, una extensión temporal expresada en minutos.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "minutes",
-      "en" : "Minutes",
+      "en" : "minutes",
       "es" : "minutos"
     },
     "maxCardinality" : "1",
@@ -13132,8 +13197,8 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "610"
   }, {
-    "range" : "121",
-    "domain" : "125",
+    "range" : "119",
+    "domain" : "123",
     "attributes" : [ "anonymous", "object" ],
     "id" : "611"
   }, {
@@ -13251,8 +13316,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "629"
   }, {
-    "range" : "121",
-    "domain" : "122",
+    "range" : "119",
+    "domain" : "120",
     "attributes" : [ "anonymous", "object" ],
     "id" : "630"
   }, {
@@ -13261,8 +13326,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "631"
   }, {
-    "range" : "121",
-    "domain" : "123",
+    "range" : "119",
+    "domain" : "121",
     "attributes" : [ "anonymous", "object" ],
     "id" : "632"
   }, {
@@ -13271,8 +13336,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "633"
   }, {
-    "range" : "121",
-    "domain" : "124",
+    "range" : "119",
+    "domain" : "122",
     "attributes" : [ "anonymous", "object" ],
     "id" : "634"
   }, {
@@ -13363,7 +13428,7 @@
       "en" : "Sensor mode\n\nExample: INS-NOBS",
       "es" : "Modo del sensor\n\nEjemplo: INS-NOBS"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "637"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
@@ -13384,7 +13449,8 @@
     "baseIri" : "https://w3id.org/reseo",
     "range" : "508",
     "label" : {
-      "IRI-based" : "column"
+      "IRI-based" : "column",
+      "en" : "column"
     },
     "domain" : "549",
     "attributes" : [ "datatype" ],
@@ -13409,6 +13475,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -13419,12 +13491,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -13456,19 +13522,19 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Si un intervalo propio T1 es empezado por otro intervalo propio T2, entonces el principio de T1 coincide con el principio de T2, y el final de T1 es posterior al final de T2.",
+        "language" : "en",
+        "value" : "If a proper interval T1 is intervalStarted another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is after the end of T2.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "If a proper interval T1 is intervalStarted another proper interval T2, then the beginning of T1 is coincident with the beginning of T2, and the end of T1 is after the end of T2.",
+        "language" : "es",
+        "value" : "Si un intervalo propio T1 es empezado por otro intervalo propio T2, entonces el principio de T1 coincide con el principio de T2, y el final de T1 es posterior al final de T2.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "intervalStartedBy",
-      "en" : "Interval started by",
+      "en" : "interval started by",
       "es" : "Intervalo comenzado por"
     },
     "domain" : "36",
@@ -13485,13 +13551,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Duration of a temporal entity.",
+        "language" : "es",
+        "value" : "Duración de una entidad temporal.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Duración de una entidad temporal.",
+        "language" : "en",
+        "value" : "Duration of a temporal entity.",
         "type" : "label"
       } ]
     },
@@ -13528,22 +13594,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -13635,24 +13701,24 @@
     "annotations" : {
       "editorialNote" : [ {
         "identifier" : "editorialNote",
-        "language" : "en",
-        "value" : "Feature at risk - added in 2017 revision, and not yet widely used. ",
+        "language" : "es",
+        "value" : "Característica arriesgada - añadida en la revisión de 2017, y todavía no ampliamente utilizada.",
         "type" : "label"
       }, {
         "identifier" : "editorialNote",
-        "language" : "es",
-        "value" : "Característica arriesgada - añadida en la revisión de 2017, y todavía no ampliamente utilizada.",
+        "language" : "en",
+        "value" : "Feature at risk - added in 2017 revision, and not yet widely used. ",
         "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "El mes del año, cuyo valor es un miembro de la clase 'mes del año'.",
+        "language" : "en",
+        "value" : "The month of the year, whose value is a member of the class time:MonthOfYear",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The month of the year, whose value is a member of the class time:MonthOfYear",
+        "language" : "es",
+        "value" : "El mes del año, cuyo valor es un miembro de la clase 'mes del año'.",
         "type" : "label"
       } ]
     },
@@ -13692,12 +13758,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -13768,20 +13834,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de día en un sistema calendario-reloj.\n\nEl rango de esta propiedad no está especificado, por tanto, se puede reemplazar por una representación específica de un día de calendario de cualquier calendario.",
+        "language" : "en",
+        "value" : "Day position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. ",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Day position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. ",
+        "language" : "es",
+        "value" : "Posición de día en un sistema calendario-reloj.\n\nEl rango de esta propiedad no está especificado, por tanto, se puede reemplazar por una representación específica de un día de calendario de cualquier calendario.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "day",
       "en" : "day",
-      "es" : "día"
+      "es" : "Día"
     },
     "maxCardinality" : "1",
     "domain" : "128",
@@ -13892,12 +13958,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -13943,14 +14009,15 @@
       "en" : "Percentage of area non vegetated\n\nExample: 33.812419",
       "es" : "Porcentaje de área sin vegetación\n\nEjemplo: 33.812419"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "662"
   }, {
     "iri" : "https://w3id.org/reseo#hasSensor",
     "baseIri" : "https://w3id.org/reseo",
     "range" : "184",
     "label" : {
-      "IRI-based" : "hasSensor"
+      "IRI-based" : "hasSensor",
+      "undefined" : "has sensor"
     },
     "superproperty" : [ "63" ],
     "domain" : "251",
@@ -14006,7 +14073,7 @@
     "label" : {
       "IRI-based" : "hasDurationDescription",
       "en" : "Has duration description",
-      "es" : "tiene descripción de duración"
+      "es" : "Tiene descripción de duración"
     },
     "superproperty" : [ "547" ],
     "domain" : "231",
@@ -14039,25 +14106,9 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "666"
   }, {
-    "iri" : "http://www.w3.org/2006/time#year",
-    "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "668",
-    "label" : {
-      "IRI-based" : "year",
-      "en" : "year",
-      "es" : "Año"
-    },
-    "domain" : "154",
-    "comment" : {
-      "en" : "Year position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar year from any calendar. ",
-      "es" : "Posición de año en un sistema calendario-reloj.\n\nl rango de esta propiedad no está especificado, por tanto, se puede reemplazar por cualquier representación específica de un año de calendario de un calendario cualquiera."
-    },
-    "attributes" : [ "datatype", "external", "allValues" ],
-    "id" : "667"
-  }, {
     "iri" : "http://www.w3.org/2006/time#month",
     "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "670",
+    "range" : "668",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -14073,13 +14124,29 @@
     },
     "label" : {
       "IRI-based" : "month",
-      "en" : "Month",
+      "en" : "month",
       "es" : "mes"
     },
     "domain" : "154",
     "comment" : {
       "en" : "Month position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. ",
       "es" : "Posición de mes en un sistema calendario-reloj.\n    El rango de esta propiedad no está especificado, por tanto, se puede reemplazar por cualquier representación específica de un mes de calendario de un calendario cualquiera."
+    },
+    "attributes" : [ "datatype", "external", "allValues" ],
+    "id" : "667"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#year",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "670",
+    "label" : {
+      "IRI-based" : "year",
+      "en" : "Year",
+      "es" : "Año"
+    },
+    "domain" : "154",
+    "comment" : {
+      "en" : "Year position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar year from any calendar. ",
+      "es" : "Posición de año en un sistema calendario-reloj.\n\nl rango de esta propiedad no está especificado, por tanto, se puede reemplazar por cualquier representación específica de un año de calendario de un calendario cualquiera."
     },
     "attributes" : [ "datatype", "external", "allValues" ],
     "id" : "669"
@@ -14103,7 +14170,7 @@
     "label" : {
       "IRI-based" : "intervalOverlappedBy",
       "en" : "Interval overlapped by",
-      "es" : "intervalo solapado por"
+      "es" : "Intervalo solapado por"
     },
     "domain" : "36",
     "comment" : {
@@ -14119,20 +14186,20 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de día en un sistema calendario-reloj.\n\nEl rango de esta propiedad no está especificado, por tanto, se puede reemplazar por una representación específica de un día de calendario de cualquier calendario.",
+        "language" : "en",
+        "value" : "Day position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. ",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Day position in a calendar-clock system.\n\nThe range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. ",
+        "language" : "es",
+        "value" : "Posición de día en un sistema calendario-reloj.\n\nEl rango de esta propiedad no está especificado, por tanto, se puede reemplazar por una representación específica de un día de calendario de cualquier calendario.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "day",
       "en" : "day",
-      "es" : "día"
+      "es" : "Día"
     },
     "domain" : "154",
     "comment" : {
@@ -14165,7 +14232,7 @@
       "en" : "Unclassified percentage\n\nExample: 0.377401",
       "es" : "Porcentaje sin clasificar\n\nEjemplo: 0.377401"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "676"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDgYear",
@@ -14174,13 +14241,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Posición de un instante, expresado utilizando xsd:gYear.",
+        "language" : "en",
+        "value" : "Position of an instant, expressed using xsd:gYear",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Position of an instant, expressed using xsd:gYear",
+        "language" : "es",
+        "value" : "Posición de un instante, expresado utilizando xsd:gYear.",
         "type" : "label"
       } ]
     },
@@ -14270,7 +14337,7 @@
       "en" : "The temporal reference system used by a temporal position or extent description. ",
       "es" : "El sistema de referencia temporal utilizado por una posición temporal o descripción de extensión."
     },
-    "attributes" : [ "functional", "object", "external" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "678"
   }, {
     "iri" : "https://w3id.org/reseo#highprobacloudspercentage",
@@ -14286,7 +14353,7 @@
       "en" : "High proba clouds percentage\n\nExample: 0.232073",
       "es" : "Porcentaje de nubes altas\n\nEjemplo: 0.232073"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "679"
   }, {
     "iri" : "https://w3id.org/reseo#relativeorbitnumber",
@@ -14302,7 +14369,7 @@
       "en" : "Relative orbit number to which the oldest data unit of the product refers\n\nExample: 94",
       "es" : "Número de órbita absoluto al que se refieren los datos más antiguos del producto\n\nEjemplo: 94"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "680"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
@@ -14335,7 +14402,7 @@
     "superproperty" : [ "11" ],
     "domain" : "64",
     "subproperty" : [ "512" ],
-    "attributes" : [ "transitive", "object", "external" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "13"
   }, {
     "iri" : "http://aemet.linkeddata.es/ontology/locatedInProvince",
@@ -14409,13 +14476,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "El valor (numérico) que indica posición temporal en un sistema de referencia ordinal.",
+        "language" : "en",
+        "value" : "The (numeric) value indicating position within a temporal coordinate system ",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The (numeric) value indicating position within a temporal coordinate system ",
+        "language" : "es",
+        "value" : "El valor (numérico) que indica posición temporal en un sistema de referencia ordinal.",
         "type" : "label"
       } ]
     },
@@ -14451,12 +14518,12 @@
     "label" : {
       "IRI-based" : "intervalBefore",
       "en" : "interval before",
-      "es" : "Intervalo antes"
+      "es" : "intervalo anterior"
     },
     "superproperty" : [ "530", "552" ],
     "domain" : "36",
     "comment" : {
-      "en" : "Interval before",
+      "en" : "If a proper interval T1 is intervalBefore another proper interval T2, then the end of T1 is before the beginning of T2.",
       "es" : "Si un intervalo propio T1 está antes que otro intervalo propio T2, entonces el final de T1 está antes que el principio de T2."
     },
     "attributes" : [ "object", "external" ],
