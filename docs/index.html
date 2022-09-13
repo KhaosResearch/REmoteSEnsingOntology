@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Remote Sensing Ontology</title>
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>RESEO - REmote SEnsing Ontology</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/reseo","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/reseo","name":"Remote Sensing Ontology", "headline":"Document describing the ontology https://w3id.org/reseo", "datePublished":"Wed Sep 07 11:57:59 CEST 2022", "author":[{"@type":"Person","name":"Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., & Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/reseo","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/reseo","name":"RESEO - REmote SEnsing Ontology", "headline":"Earth Observation (EO) based on Remote Sensing (RS) is gaining importance nowadays, since it offers a well-grounded technological framework for the development of advanced applications in multiple domains, such as climate change, precision agriculture, smart urbanism, safety, and many others. This promotes the continuous generation of data-driven software facilities oriented to advanced processing, analysis and visualization, which often offer enhanced computing capabilities. Nevertheless, the development of knowledge-driven approaches is still an open challenge in remote sensing, besides they provide human experts with domain knowledge representation, support for data standardization and semantic integration of sources, which indeed enhance the construction of advanced on-top applications. To this end, the use of ontologies and web semantic technologies have shown high success in knowledge representation in many fields, in which the Earth Observation is not an exception. However, as argued by the research community, there is large room for improvement in the specific case of remote sensing, where ontologies that consider the special nature and structure of different satellital and airborne data products are demanded. This article addresses, in first instance, part of this need by proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning.", "datePublished":"Tue Sep 13 14:20:36 CEST 2022", "version":"1.0", "license":"https://opensource.org/licenses/MIT", "author":[{"@type":"Person","name":"Khaos Research Group, University of Málaga"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -53,8 +53,8 @@ $(function(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
-<h1>Remote Sensing Ontology</h1>
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>RESEO - REmote SEnsing Ontology</h1>
 
 
 <dl>
@@ -64,36 +64,20 @@ $(function(){
 <dd><a href="https://w3id.org/reseo">https://w3id.org/reseo</a></dd>
 <dt>Previous version:</dt>
 <dd><a href="http://khaos.uma.es/green-senti/reseo/0.1">http://khaos.uma.es/green-senti/reseo/0.1</a></dd>
+<dt>Revision:</dt>
+<dd>1.0</dd>
 <dt>Authors:</dt>
-<dd>Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., & Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838</dd>
+<dd>Khaos Research Group, University of Málaga</dd>
 
+<dt>Publisher:</dt>
+<dd>Khaos Research Group</dd>
 <dt>Imported Ontologies:</dt>
 <dd><a href="http://aemet.linkeddata.es/ontology/aemet.owl">aemet.owl</a></dd><dd><a href="http://www.opengis.net/ont/geosparql">geosparql</a></dd><dd><a href="http://www.opengis.net/ont/gml">gml</a></dd><dd><a href="http://www.opengis.net/ont/sf">sf</a></dd><dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://www.w3.org/2006/time">time</a></dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-MIT%20License
-
-Copyright%20(c)%202022%20Khaos%20Research
-
-Permission%20is%20hereby%20granted,%20free%20of%20charge,%20to%20any%20person%20obtaining%20a%20copy
-of%20this%20software%20and%20associated%20documentation%20files%20(the%20"Software"),%20to%20deal
-in%20the%20Software%20without%20restriction,%20including%20without%20limitation%20the%20rights
-to%20use,%20copy,%20modify,%20merge,%20publish,%20distribute,%20sublicense,%20and/or%20sell
-copies%20of%20the%20Software,%20and%20to%20permit%20persons%20to%20whom%20the%20Software%20is
-furnished%20to%20do%20so,%20subject%20to%20the%20following%20conditions:
-
-The%20above%20copyright%20notice%20and%20this%20permission%20notice%20shall%20be%20included%20in%20all
-copies%20or%20substantial%20portions%20of%20the%20Software.
-
-THE%20SOFTWARE%20IS%20PROVIDED%20"AS%20IS",%20WITHOUT%20WARRANTY%20OF%20ANY%20KIND,%20EXPRESS%20OR
-IMPLIED,%20INCLUDING%20BUT%20NOT%20LIMITED%20TO%20THE%20WARRANTIES%20OF%20MERCHANTABILITY,
-FITNESS%20FOR%20A%20PARTICULAR%20PURPOSE%20AND%20NONINFRINGEMENT.%20IN%20NO%20EVENT%20SHALL%20THE
-AUTHORS%20OR%20COPYRIGHT%20HOLDERS%20BE%20LIABLE%20FOR%20ANY%20CLAIM,%20DAMAGES%20OR%20OTHER
-LIABILITY,%20WHETHER%20IN%20AN%20ACTION%20OF%20CONTRACT,%20TORT%20OR%20OTHERWISE,%20ARISING%20FROM,
-OUT%20OF%20OR%20IN%20CONNECTION%20WITH%20THE%20SOFTWARE%20OR%20THE%20USE%20OR%20OTHER%20DEALINGS%20IN%20THE
-SOFTWARE.-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-https://opensource.org/licenses/MIT-blue.svg" alt="https://opensource.org/licenses/MIT" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., & Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838. Remote Sensing Ontology. Retrieved from: https://w3id.org/reseo/1.0</dd>
+<dd>Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., & Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838</dd>
 </dl>
 
 <hr/>
@@ -103,7 +87,7 @@ SOFTWARE.-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+Earth Observation (EO) based on Remote Sensing (RS) is gaining importance nowadays, since it offers a well-grounded technological framework for the development of advanced applications in multiple domains, such as climate change, precision agriculture, smart urbanism, safety, and many others. This promotes the continuous generation of data-driven software facilities oriented to advanced processing, analysis and visualization, which often offer enhanced computing capabilities. Nevertheless, the development of knowledge-driven approaches is still an open challenge in remote sensing, besides they provide human experts with domain knowledge representation, support for data standardization and semantic integration of sources, which indeed enhance the construction of advanced on-top applications. To this end, the use of ontologies and web semantic technologies have shown high success in knowledge representation in many fields, in which the Earth Observation is not an exception. However, as argued by the research community, there is large room for improvement in the specific case of remote sensing, where ontologies that consider the special nature and structure of different satellital and airborne data products are demanded. This article addresses, in first instance, part of this need by proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning.</span>
 </div>
 <div id="toc"></div> 
 
@@ -117,7 +101,7 @@ This is a place holder text for the introduction. The introduction should briefl
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;https://w3id.org/reseo&gt;</td></tr>
+<tr><td><b>reseo</b></td><td>&lt;https://w3id.org/reseo&gt;</td></tr>
 <tr><td></td><td></td></tr>
 <tr><td><b>ns</b></td><td>&lt;http://creativecommons.org/ns&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
@@ -134,6 +118,7 @@ This is a place holder text for the introduction. The introduction should briefl
 <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
 <tr><td><b>oboe-core</b></td><td>&lt;http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl&gt;</td></tr>
 <tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
 <tr><td><b>reseo</b></td><td>&lt;http://khaos.uma.es/green-senti/reseo&gt;</td></tr>
 <tr><td><b>ontology</b></td><td>&lt;http://aemet.linkeddata.es/ontology&gt;</td></tr>
 <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
@@ -145,7 +130,7 @@ This is a place holder text for the introduction. The introduction should briefl
   
 
 <!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">Remote Sensing Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="overview"><h2 id="overv" class="list">RESEO - REmote SEnsin Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -456,7 +441,8 @@ This ontology has the following classes and properties.</span>
       <a href="#instrumentshortname" title="https://w3id.org/reseo#instrumentshortname">Instrument short name</a>
    </li>
    <li>
-      <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+      <a href="#landsat8ProductProperties"
+         title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
    </li>
    <li>
       <a href="#landsatproductid" title="https://w3id.org/reseo#landsatproductid">Landsat product ID</a>
@@ -596,12 +582,50 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#waterpercentage" title="https://w3id.org/reseo#waterpercentage">Water percentage</a>
    </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
+         <span>bibliographic citation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+         title="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+         <span>is rule enabled</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+         title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+         <span>preferred namespace prefix</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred namespace uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
+         <span>publisher</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+         <span>rights</span>
+      </a>
+   </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Remote Sensing Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="description"><h2 id="desc" class="list">RESEO - REmote SEnsin Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
@@ -609,8 +633,8 @@ This is a placeholder text for the description of your ontology. The description
    
 
 <!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Remote Sensing Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Remote Sensing Ontology.
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for RESEO - REmote SEnsin Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by RESEO - REmote SEnsin Ontology.
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -1062,7 +1086,8 @@ This section provides details for each class and property defined by Remote Sens
             <sup class="type-dp" title="data property">dp</sup>, <a href="#filedate" title="https://w3id.org/reseo#filedate">File date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#imagequalityoli" title="https://w3id.org/reseo#imagequalityoli">Image quality OLI</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#imagequalitytirs" title="https://w3id.org/reseo#imagequalitytirs">Image quality TIRS</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#landsat8ProductProperties"
+               title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#landsatproductid" title="https://w3id.org/reseo#landsatproductid">Landsat product ID</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#landsatsceneid" title="https://w3id.org/reseo#landsatsceneid">Landsat scene ID</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#mapprojection" title="https://w3id.org/reseo#mapprojection">Map projection</a>
@@ -2147,7 +2172,8 @@ This section provides details for each class and property defined by Remote Sens
          <a href="#instrumentshortname" title="https://w3id.org/reseo#instrumentshortname">Instrument short name</a>
       </li>
       <li>
-         <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+         <a href="#landsat8ProductProperties"
+            title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
       </li>
       <li>
          <a href="#landsatproductid" title="https://w3id.org/reseo#landsatproductid">Landsat product ID</a>
@@ -2381,7 +2407,8 @@ Values:
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2415,7 +2442,8 @@ Values:
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2489,7 +2517,8 @@ RT = Real-Time indicates initial processing with additional processing required 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2517,7 +2546,8 @@ RT = Real-Time indicates initial processing with additional processing required 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2620,7 +2650,8 @@ L1T = L1T Data</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2700,7 +2731,8 @@ YYYY/MM/DD</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2734,7 +2766,8 @@ WGS84 = World Geodetic System 1984</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2840,7 +2873,8 @@ Example: 0.27742198</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2914,7 +2948,8 @@ POLYGON ((-5.248379903953922 37.02527578563511,-4.014302538465313 37.04224724220
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#sentinel2ProductProperties"
                   title="https://w3id.org/reseo#sentinel2ProductProperties">Sentinel 2 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
@@ -3260,7 +3295,8 @@ Values:
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -3296,7 +3332,8 @@ Values:
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -3526,7 +3563,8 @@ Example: LE07_L1TP_029030_20140715_20140805_02_T1</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -3572,7 +3610,8 @@ Example: LC82010342019039LGN00</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -3755,7 +3794,8 @@ UTM = Universal Transverse Mercator</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4099,7 +4139,8 @@ USER = User</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4133,7 +4174,8 @@ Example: "Image courtesy of the U.S. Geological Survey"</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4167,7 +4209,8 @@ GEOTIFF = Geostationary Earth Orbit Tagged Image File Format</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -4858,7 +4901,8 @@ Values:
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -5081,7 +5125,8 @@ Positive Zone = Indicates that the false northing has been applied.</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#landsat8ProductProperties" title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
+               <a href="#landsat8ProductProperties"
+                  title="https://w3id.org/reseo#landsat8ProductProperties">Landsat 8 product properties</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -5237,6 +5282,104 @@ Example: 15.87375</span>
             </dd>
          </dl>
       </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
+            <span>bibliographic citation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+            title="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+            <span>is rule enabled</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+            title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+            <span>preferred namespace prefix</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+            <span>preferred namespace uri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
+            <span>publisher</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+            <span>rights</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
+      <h3>bibliographic citation<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+      <h3>creator<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+   </div>
+   <div class="entity" id="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+      <h3>is rule enabled<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+      <h3>preferred namespace prefix<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+      <h3>preferred namespace uri<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/publisher">
+      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/rights">
+      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
