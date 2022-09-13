@@ -20,30 +20,12 @@
         <owl:imports rdf:resource="http://aemet.linkeddata.es/ontology/aemet.owl"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time#"/>
-        <ns:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIT License
-
-Copyright (c) 2022 Khaos Research
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</ns:license>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., &amp; Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838</dc:creator>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Sensing Ontology</dc:title>
+        <ns:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://opensource.org/licenses/MIT</ns:license>
+        <terms:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., &amp; Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838</terms:bibliographicCitation>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Sensing Ontology</terms:title>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsin Ontlogy</rdfs:label>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://khaos.uma.es/green-senti/reseo/0.1</owl:priorVersion>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -59,9 +41,23 @@ SOFTWARE.</ns:license>
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
