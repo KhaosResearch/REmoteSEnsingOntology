@@ -11,6 +11,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:reseo="http://khaos.uma.es/green-senti/reseo#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
@@ -21,9 +22,16 @@
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time#"/>
         <ns:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://opensource.org/licenses/MIT</ns:license>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsing Ontology</dc:title>
         <terms:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., &amp; Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838</terms:bibliographicCitation>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khaos Research Group, University of Málaga</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth Observation (EO) based on Remote Sensing (RS) is gaining importance nowadays, since it offers a well-grounded technological framework for the development of advanced applications in multiple domains, such as climate change, precision agriculture, smart urbanism, safety, and many others. This promotes the continuous generation of data-driven software facilities oriented to advanced processing, analysis and visualization, which often offer enhanced computing capabilities. Nevertheless, the development of knowledge-driven approaches is still an open challenge in remote sensing, besides they provide human experts with domain knowledge representation, support for data standardization and semantic integration of sources, which indeed enhance the construction of advanced on-top applications. To this end, the use of ontologies and web semantic technologies have shown high success in knowledge representation in many fields, in which the Earth Observation is not an exception. However, as argued by the research community, there is large room for improvement in the specific case of remote sensing, where ontologies that consider the special nature and structure of different satellital and airborne data products are demanded. This article addresses, in first instance, part of this need by proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning.</terms:description>
+        <terms:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khaos Research Group</terms:publisher>
+        <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(c) Khaos Research Group, University of Málaga</terms:rights>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Sensing Ontology</terms:title>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsin Ontlogy</rdfs:label>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reseo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/reseo</vann:preferredNamespaceUri>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsin Ontology</rdfs:label>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://khaos.uma.es/green-senti/reseo/0.1</owl:priorVersion>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
     </owl:Ontology>
@@ -41,14 +49,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/abstract -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
@@ -58,6 +58,30 @@
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
