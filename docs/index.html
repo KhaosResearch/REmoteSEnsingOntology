@@ -53,7 +53,7 @@ $(function(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>RESEO - REmote SEnsing Ontology</h1>
 <h2>Release 2021-09-24T23:59:59</h2>
 
@@ -100,41 +100,45 @@ Earth Observation (EO) based on Remote Sensing (RS) is gaining importance nowada
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<span>
+    The development of new sensors and the growing ease of access to data generated with remote sensing techniques are pushing data-driven research and the development of new innovative algorithms for its analysis. In this context, Earth Observation's satellite systems are continuously generating a great quantity of data, which are nowadays essential for applications in diverse areas, such as: climate change monitoring <em>(Plummer, Lecomte, & Doherty, 2017)</em>, precision agriculture <em>(Weiss, Jacob, & Duveiller, 2020)</em>, smart urban design <em>(Reba & Seto, 2020)</em>, and many others. This promotes the continuous generation of data-driven software facilities oriented to advanced processing, analysis and visualization, which often offer enhanced computing capabilities. However, while promising, such new-generation applications still require the symbolic representation of scenes and objects in images, as well as the setting of threshold values of computed vegetation indexes for the generation of knowledge rule systems <em>(Belgiu, Drǎguţ, & Strobl, 2014)</em>. In this regard, the development of knowledge-driven deductive methods represents an important research line in remote sensing  <em>(Arvor et al., 2019, Chen, et al., 2016)</em>, as they complement inductive data-driven techniques to make them more actionable. A significant example in this direction is GEOBIA (Geographic Object-Based Image Analysis) <em>(Blaschke, et al., 2014)</em> that allows to set objects in satellite images (based on grouping pixels according to common features) to classify them. GEOBIA enables the representation of complex spatial topological and non-topological relationships. However, as argued in the literature <em>(Arvor et al., 2019)</em> and <em>(Belgiu et al., 2014)</em>, GEOBIA rules are usually highly biased to specific scenarios and hence, they are rarely suited to be generalized. <br/>
+    <br/>
+    In this sense, the development of general knowledge-driven approaches constitutes an open challenge in remote sensing, besides they provide human experts with domain knowledge representation, support for data standardization and semantic integration of multiple sources, such as multi-spectral (and hyper-spectral) data from various satellites and linked open data (meteorological, plant phenotype, etc.). Therefore, there is a clear need of studying integration aspects of existing ontologies in the context of remote sensing <em>(Arvor et al., 2019)</em>, as well as to show the potentials of such integration for feeding advanced analysis. To this end, the use of ontologies and web semantic technologies has shown high success in many fields. In the specific domain of remote sensing, there are several distinct attempts of ontologies, although they still constitute local prototypes that illustrate the potential in their use <em>(Andrés et al., 2017, Arvor et al., 2019)</em>. <br/>
+    <br/>
+    On the basis of this necessity, this article proposes a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL (Web Ontology Language) <em>(Group, 2012)</em> ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. The proposed ontology, called RESEO (REmote SEnsing Ontology), has been designed to consider remote sensing data and meta-data products in general, including satellite constellations, unmanned aerial vehicles (UAVs), airborne, etc. For the sake of better understanding, the current study is mainly focused on the Sentinel 2 satellite mission of the Copernicus Programme of the European Space Agency (ESA), due to the growing popularity it is exhibiting among the scientific community since its launch in 2015 <em>(Pahlevan, Sarkar, Franz, Balasubramanian, & He, 2017)</em>. <br/>
+</span>
 <div id="namespacedeclarations">
-<h3 id="ns" class="list">Namespace declarations</h3>
-<div id="ns" align="center">
-<table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
-<tbody>
-<tr><td><b>reseo</b></td><td>&lt;https://w3id.org/reseo&gt;</td></tr>
-<tr><td></td><td></td></tr>
-<tr><td><b>ns</b></td><td>&lt;http://creativecommons.org/ns&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-<tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl&gt;</td></tr>
-<tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb&gt;</td></tr>
-<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
-<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>ssn</b></td><td>&lt;http://purl.oclc.org/NET/ssnx/ssn&gt;</td></tr>
-<tr><td><b>swrla</b></td><td>&lt;http://swrl.stanford.edu/ontologies/3.3/swrla.owl&gt;</td></tr>
-<tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/ont/geosparql&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
-<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
-<tr><td><b>oboe-core</b></td><td>&lt;http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl&gt;</td></tr>
-<tr><td><b>bibo</b></td><td>&lt;http://purl.org/ontology/bibo&gt;</td></tr>
-<tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time&gt;</td></tr>
-<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
-<tr><td><b>reseo</b></td><td>&lt;http://khaos.uma.es/green-senti/reseo&gt;</td></tr>
-<tr><td><b>ontology</b></td><td>&lt;http://aemet.linkeddata.es/ontology&gt;</td></tr>
-<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
+    <h3 id="ns" class="list">Namespace declarations</h3>
+    <div id="ns" align="center">
+        <table>
+            <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+            <tbody>
+                <tr><td><b>reseo</b></td><td>&lt;https://w3id.org/reseo&gt;</td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td><b>ns</b></td><td>&lt;http://creativecommons.org/ns&gt;</td></tr>
+                <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+                <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+                <tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl&gt;</td></tr>
+                <tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb&gt;</td></tr>
+                <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+                <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+                <tr><td><b>ssn</b></td><td>&lt;http://purl.oclc.org/NET/ssnx/ssn&gt;</td></tr>
+                <tr><td><b>swrla</b></td><td>&lt;http://swrl.stanford.edu/ontologies/3.3/swrla.owl&gt;</td></tr>
+                <tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/ont/geosparql&gt;</td></tr>
+                <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+                <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+                <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+                <tr><td><b>oboe-core</b></td><td>&lt;http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl&gt;</td></tr>
+                <tr><td><b>bibo</b></td><td>&lt;http://purl.org/ontology/bibo&gt;</td></tr>
+                <tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time&gt;</td></tr>
+                <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
+                <tr><td><b>reseo</b></td><td>&lt;http://khaos.uma.es/green-senti/reseo&gt;</td></tr>
+                <tr><td><b>ontology</b></td><td>&lt;http://aemet.linkeddata.es/ontology&gt;</td></tr>
+                <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div></div>
   
 
 <!--OVERVIEW SECTION-->
@@ -584,10 +588,17 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">RESEO - REmote SEnsin Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
-
+    <div id="description">
+<h2 id="desc" class="list">RESEO - REmote SEnsin Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span>
+    A number of classes have been integrated from other external ontologies, although a set of new generic ones have been designed to be inherited from. This allows the ontology to be easily expanded by adding new <b>Scene</b>, <b>DataSource</b> or <b>Product</b> types depending on the specific end user's case of study. For simplicity, a selection of the most important classes of RESEO are detailed as follows: <br/>
+    <br/>
+    - <b>Product</b>. This class defines the data products received from the remote sensing devices, i.e., EO satellites and UAVs. Each <b>Product</b> has associated a timestamp given from the owl-TIME ontology of type time:GeneralDateTimeDescription.5 The <b>Product</b> class is modelled in this version with two subclasses, Sentinel2Product and Landsat8Product which correspond to the data sources worked at the moment in the semantic model, although it can be easily extended with more of them. A set of main object properties of the <b>Product</b> class are: hasDataSource, hasDate, hasProduct, and hasScene. Regarding data properties, they are mostly defined for the subclasses of <b>Product</b>, since they cover specific aspects of the contextual use cases where they are used. <br/>
+    - <b>Data Source</b>. It represents a data provider for a <b>Product</b>. In its current state, this class has the subclass Satellite, which in turn has other two subclasses: Sentinel2 and Landsat8. However, depending on the application, it could be extended with new hierarchies of subclasses to define different sources, such as: other EO satellites (MODIS, WorldView) and UAV products. <b>DataSource</b> includes two main object properties, hasDataSource and isDataSourceOf. It is worth noting that <b>DataSource</b> can also be used as linking element with other external ontologies, since it could cover sources of data in general, but focused on contextualizing with the remote sensing domain of knowledge. In this regard, the subclass Satellite has the object property processedBy with range NDVIProcessing, which is in turn linked with classes Procedure and Observation from the SSN ontology. NDVIProcessing has the data property formula to define how the NDVI is calculated for each satellite. In this regard, a subclass of satellite is Sentinel2, which is connected to MSI, being this last a subclass of Sensor (also taken from SSN). <br/>
+    - <b>Scene</b>. A <b>Scene</b> defines a region of interest with a specific location in the Earth. A scene is contained inside one or more products, which could be captured from different remote sensing devices (Sentinel 2, Landsat 8, UAVs, etc.), although referring to the same specific location and preferably to similar (or close) time instants. <b>Scene</b> is modelled as a subclass of the geosparql:Geometry class of the GeoSPARQL ontology. Object properties defined for <b>Scene</b> are: hasNearestStation hasScene and isSceneOf. Data properties of this class are defined in geosparql:Geometry. The property hasNearestStation is used as linking element with the AEMET.owl ontology that incorporates meteorological data. In this way, the <b>Scene</b> allows to integrate different sensing data referring to a specific location, for a given time period and including the specific climatic conditions, e.g., the imagery products of Sentinel 2 and Landsat 8 capturing the area of the Strait of Gibraltar, and including maximum and minimum temperatures during the first week of August. <br/>
+    - <b>Snapshot</b>. A <b>Snapshot</b> represents the results of an analysis of a <b>Product</b>, over a concrete <b>Scene</b> of interest. The object properties of this class, namely: hasProduct, isProductOf and isSceneOf. Among the data properties, it is worth mentioning those referring to vegetation indexes, such as EVI or NDVI, which are computed with different combination of spectral bands, depending on the remote sensing devices involved in the specific <b>Scene</b> (e.g., Sentinel 2, Landsat 8, etc.). The remaining indexes (SAVI, NSDI, etc.) are defined in this class by following similar schemes of data properties as done with EVI and NDVI. In this sense, NDVI is linked with the OBOE class Characteristic and with the SWEET ontology by means of the property hasCharacteristic. Another interesting property is the cloud cover percentage in sensed images, which is often used as a threshold to select an specific product, or discard it, for the analysis. <br/>
+    - <b>Entity</b>. This class has been reused from the OBOE ontology to model in RESEO those subclasses related to land-cover classification, in the current version: BareSoil, Building, Vegetation and Water. These classes are indeed subclasses of FeatureOfInterest from the SSN ontology. They are used as consequent elements in reasoning rules to perform ontology classification of remote sensing imagery. <br/>
+</span>
 </div>
    
 
@@ -5323,15 +5334,6 @@ Example: 15.87375</span>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
 </div>
    
 
