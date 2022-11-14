@@ -34,6 +34,7 @@
         <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(c) Khaos Research Group, University of Málaga</terms:rights>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Sensing Ontology</terms:title>
         <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.eswa.2021.115838</bibo:doi>
+        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reseo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/reseo</vann:preferredNamespaceUri>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsin Ontology</rdfs:label>
