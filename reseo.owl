@@ -8,41 +8,46 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:unit="http://qudt.org/vocab/unit/"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:aemet="http://aemet.linkeddata.es/ontology/"
      xmlns:reseo="https://w3id.org/reseo#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
+     xmlns:schema="https://schema.org/"
+     xmlns:sweet-me="http://sweetontology.net/matrEquipment/">
     <owl:Ontology rdf:about="https://w3id.org/reseo#">
-        <owl:versionIRI rdf:resource="https://w3id.org/reseo/1.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/reseo/2.0"/>
         <owl:imports rdf:resource="http://aemet.linkeddata.es/ontology/aemet.owl"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time#"/>
         <ns:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://opensource.org/licenses/MIT</ns:license>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsing Ontology</dc:title>
+        <dc:title>RESEO - REmote SEnsing Ontology</dc:title>
         <terms:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Aldana-Martín, J. F., García-Nieto, J., Roldan-Garcia, M. D. M., &amp; Aldana-Montes, J. F. (2021). Semantic modelling of Earth Observation remote sensing [Computer software]. doi: https://doi.org/10.1016/j.eswa.2021.115838</terms:bibliographicCitation>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-24T23:59:59</terms:created>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khaos Research Group, University of Málaga</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth Observation (EO) based on Remote Sensing (RS) is gaining importance nowadays, since it offers a well-grounded technological framework for the development of advanced applications in multiple domains, such as climate change, precision agriculture, smart urbanism, safety, and many others. This promotes the continuous generation of data-driven software facilities oriented to advanced processing, analysis and visualization, which often offer enhanced computing capabilities. Nevertheless, the development of knowledge-driven approaches is still an open challenge in remote sensing, besides they provide human experts with domain knowledge representation, support for data standardization and semantic integration of sources, which indeed enhance the construction of advanced on-top applications. To this end, the use of ontologies and web semantic technologies have shown high success in knowledge representation in many fields, in which the Earth Observation is not an exception. However, as argued by the research community, there is large room for improvement in the specific case of remote sensing, where ontologies that consider the special nature and structure of different satellital and airborne data products are demanded. This article addresses, in first instance, part of this need by proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning.</terms:description>
+        <terms:creator>Khaos Research Group, University of Málaga</terms:creator>
+        <terms:description>Earth Observation (EO) based on Remote Sensing (RS) is gaining importance nowadays, since it offers a well-grounded technological framework for the development of advanced applications in multiple domains, such as climate change, precision agriculture, smart urbanism, safety, and many others. This promotes the continuous generation of data-driven software facilities oriented to advanced processing, analysis and visualization, which often offer enhanced computing capabilities. Nevertheless, the development of knowledge-driven approaches is still an open challenge in remote sensing, besides they provide human experts with domain knowledge representation, support for data standardization and semantic integration of sources, which indeed enhance the construction of advanced on-top applications. To this end, the use of ontologies and web semantic technologies have shown high success in knowledge representation in many fields, in which the Earth Observation is not an exception. However, as argued by the research community, there is large room for improvement in the specific case of remote sensing, where ontologies that consider the special nature and structure of different satellital and airborne data products are demanded. This article addresses, in first instance, part of this need by proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning.</terms:description>
+        <terms:issued>published</terms:issued>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-01T23:59:59</terms:issued>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">published</terms:issued>
-        <terms:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert Systems with Applications</terms:publisher>
-        <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(c) Khaos Research Group, University of Málaga</terms:rights>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Sensing Ontology</terms:title>
+        <terms:publisher>Expert Systems with Applications</terms:publisher>
+        <terms:rights>(c) Khaos Research Group, University of Málaga</terms:rights>
+        <terms:title>Remote Sensing Ontology</terms:title>
         <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.eswa.2021.115838</bibo:doi>
         <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reseo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>reseo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/reseo</vann:preferredNamespaceUri>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO - REmote SEnsin Ontology</rdfs:label>
+        <rdfs:label>RESEO - REmote SEnsin Ontology</rdfs:label>
         <owl:incompatibleWith rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://khaos.uma.es/green-senti/reseo/0.1</owl:incompatibleWith>
-        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1</owl:priorVersion>
+        <owl:priorVersion>0.1</owl:priorVersion>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://khaos.uma.es/green-senti/reseo/0.1</owl:priorVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+        <owl:versionInfo>1.0</owl:versionInfo>
         <schema:logo rdf:resource="https://raw.githubusercontent.com/KhaosResearch/REmoteSEnsingOntology/master/logo/logo.svg"/>
     </owl:Ontology>
     
@@ -116,6 +121,12 @@
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     
 
 
@@ -1901,6 +1912,22 @@ Example: 15.87375</rdfs:comment>
     
 
 
+    <!-- http://aemet.linkeddata.es/ontology/Sensor -->
+
+    <rdf:Description rdf:about="http://aemet.linkeddata.es/ontology/Sensor">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://aemet.linkeddata.es/ontology/WeatherStation -->
+
+    <rdf:Description rdf:about="http://aemet.linkeddata.es/ontology/WeatherStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#GroundSensor"/>
+    </rdf:Description>
+    
+
+
     <!-- http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic -->
 
     <owl:Class rdf:about="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
@@ -1913,9 +1940,74 @@ Example: 15.87375</rdfs:comment>
     
 
 
+    <!-- http://sweetontology.net/matrEquipment/Aircraft -->
+
+    <owl:Class rdf:about="http://sweetontology.net/matrEquipment/Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/matrEquipment/Airplane -->
+
+    <owl:Class rdf:about="http://sweetontology.net/matrEquipment/Airplane">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/matrEquipment/Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/matrEquipment/Satellite -->
+
+    <owl:Class rdf:about="http://sweetontology.net/matrEquipment/Satellite">
+        <owl:equivalentClass rdf:resource="https://w3id.org/reseo#Satellite"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/matrInstrument/LIDAR -->
+
+    <owl:Class rdf:about="http://sweetontology.net/matrInstrument/LIDAR">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#ActiveSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    
+
+
     <!-- http://www.w3.org/2006/time#GeneralDateTimeDescription -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- https://w3id.org/reseo#ActiveSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#ActiveSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:Class>
     
 
 
@@ -2056,11 +2148,44 @@ Example: 15.87375</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/reseo#CarbonChamber -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#CarbonChamber">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#GroundSensor"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/reseo#DataSource -->
 
     <owl:Class rdf:about="https://w3id.org/reseo#DataSource">
         <rdfs:label xml:lang="en">Data source</rdfs:label>
         <rdfs:label xml:lang="es">Fuente de datos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Drone -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Drone">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/matrEquipment/Aircraft"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#NearGroundPlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#GroundSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#GroundSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Hyperspectral -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Hyperspectral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
     </owl:Class>
     
 
@@ -2094,6 +2219,14 @@ Example: 15.87375</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/reseo#Multispectral -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Multispectral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/reseo#NDVI -->
 
     <owl:Class rdf:about="https://w3id.org/reseo#NDVI">
@@ -2108,6 +2241,22 @@ Example: 15.87375</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/reseo#NDVIProcessing">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">NDVI Processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#NearGroundPlatform -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#NearGroundPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#PassiveSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#PassiveSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     </owl:Class>
     
 
@@ -2163,6 +2312,22 @@ Example: 15.87375</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:label xml:lang="en">Product</rdfs:label>
         <rdfs:label xml:lang="es">Producto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#RGB -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#RGB">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Radar -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Radar">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#ActiveSensor"/>
     </owl:Class>
     
 
@@ -2260,6 +2425,38 @@ Example: 15.87375</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/reseo#SoilSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#SoilSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#GroundSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Sonar -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Sonar">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#ActiveSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Thermal -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Thermal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Tower -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Tower">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#NearGroundPlatform"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/reseo#Vegetation -->
 
     <owl:Class rdf:about="https://w3id.org/reseo#Vegetation">
@@ -2276,6 +2473,22 @@ Example: 15.87375</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
         <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#WirelessSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#WirelessSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#GroundSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reseo#Zeppelin -->
+
+    <owl:Class rdf:about="https://w3id.org/reseo#Zeppelin">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/matrEquipment/Aircraft"/>
     </owl:Class>
     
 
@@ -2367,8 +2580,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as vegetation using bands NDVI-B11-B04-B02</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isVegetation NDVI-B11-B04-B02</rdfs:label>
+        <rdfs:comment>Classify pixels as vegetation using bands NDVI-B11-B04-B02</rdfs:comment>
+        <rdfs:label>isVegetation NDVI-B11-B04-B02</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -2747,8 +2960,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as building using bands NDVI-B11-B04-B02</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBuilding NDVI-B11-B04-B02</rdfs:label>
+        <rdfs:comment>Classify pixels as building using bands NDVI-B11-B04-B02</rdfs:comment>
+        <rdfs:label>isBuilding NDVI-B11-B04-B02</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -3127,8 +3340,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as bare soil using bands NDVI-B11-B04-B02. 0.232</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBareSoil NDVI-B11-B04-B02 -2</rdfs:label>
+        <rdfs:comment>Classify pixels as bare soil using bands NDVI-B11-B04-B02. 0.232</rdfs:comment>
+        <rdfs:label>isBareSoil NDVI-B11-B04-B02 -2</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -3507,8 +3720,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as vegetation using bands NDVI-B11-B01</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isVegetation NDVI-B11-B01</rdfs:label>
+        <rdfs:comment>Classify pixels as vegetation using bands NDVI-B11-B01</rdfs:comment>
+        <rdfs:label>isVegetation NDVI-B11-B01</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -3824,8 +4037,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as bare soil using bands NDVI-B11-B04-B02</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBareSoil NDVI-B11-B04-B02</rdfs:label>
+        <rdfs:comment>Classify pixels as bare soil using bands NDVI-B11-B04-B02</rdfs:comment>
+        <rdfs:label>isBareSoil NDVI-B11-B04-B02</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -4204,8 +4417,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as bare soil using bands NDVI-B11-B04</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBareSoil NDVI-B11-B04</rdfs:label>
+        <rdfs:comment>Classify pixels as bare soil using bands NDVI-B11-B04</rdfs:comment>
+        <rdfs:label>isBareSoil NDVI-B11-B04</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -4497,8 +4710,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as water using bands NDVI-B11-B04</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isWater NDVI-B11-B04</rdfs:label>
+        <rdfs:comment>Classify pixels as water using bands NDVI-B11-B04</rdfs:comment>
+        <rdfs:label>isWater NDVI-B11-B04</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -4790,8 +5003,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as bare soil using bands NDVI-B12</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBareSoil NDVI-B12</rdfs:label>
+        <rdfs:comment>Classify pixels as bare soil using bands NDVI-B12</rdfs:comment>
+        <rdfs:label>isBareSoil NDVI-B12</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -5020,8 +5233,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as vegetation using bands NDVI-B12</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isVegetation NDVI-B12</rdfs:label>
+        <rdfs:comment>Classify pixels as vegetation using bands NDVI-B12</rdfs:comment>
+        <rdfs:label>isVegetation NDVI-B12</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -5250,8 +5463,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as vegetation using bands NDVI</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isVegetation NDVI</rdfs:label>
+        <rdfs:comment>Classify pixels as vegetation using bands NDVI</rdfs:comment>
+        <rdfs:label>isVegetation NDVI</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -5369,8 +5582,8 @@ Example: 15.87375</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classify pixels as bare soil using bands NDVI-B11-B01</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isBareSoil NDVI-B11-B01</rdfs:label>
+        <rdfs:comment>Classify pixels as bare soil using bands NDVI-B11-B01</rdfs:comment>
+        <rdfs:label>isBareSoil NDVI-B11-B01</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -5688,5 +5901,5 @@ Example: 15.87375</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
