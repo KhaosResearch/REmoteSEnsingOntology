@@ -1973,6 +1973,14 @@ Example: 15.87375</rdfs:comment>
     
 
 
+    <!-- http://sweetontology.net/matrInstrument/Radar -->
+
+    <owl:Class rdf:about="http://sweetontology.net/matrInstrument/Radar">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#ActiveSensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.opengis.net/ont/geosparql#Geometry -->
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
@@ -2007,6 +2015,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#ActiveSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocabs.lter-europe.net/EnvThes/22322</skos:closeMatch>
     </owl:Class>
     
 
@@ -2170,6 +2179,7 @@ Example: 15.87375</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/reseo#Drone">
         <rdfs:subClassOf rdf:resource="http://sweetontology.net/matrEquipment/Aircraft"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#NearGroundPlatform"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://terra-vocabulary.org/ncl/DataTerraRepositoryFairIncubator/motsClefs/c_eeb4c723</skos:closeMatch>
     </owl:Class>
     
 
@@ -2178,6 +2188,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#GroundSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://vocab.aeris-data.fr/platform/23811cea-79c0-e007-7c72-5e9c9bf62213</skos:closeMatch>
     </owl:Class>
     
 
@@ -2223,6 +2234,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#Multispectral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.nerc.ac.uk/collection/L22/current/TOOL1036/</skos:closeMatch>
     </owl:Class>
     
 
@@ -2257,6 +2269,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#PassiveSensor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocabs.lter-europe.net/EnvThes/msa0802</skos:closeMatch>
     </owl:Class>
     
 
@@ -2320,14 +2333,6 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#RGB">
         <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/reseo#Radar -->
-
-    <owl:Class rdf:about="https://w3id.org/reseo#Radar">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#ActiveSensor"/>
     </owl:Class>
     
 
@@ -2437,6 +2442,8 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#Sonar">
         <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#ActiveSensor"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.nerc.ac.uk/collection/P02/current/SSCN/</skos:closeMatch>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://vocab.aeris-data.fr/instrument/60f0ce9a-62f5-d937-ffdc-534c9d48dd21</skos:closeMatch>
     </owl:Class>
     
 
@@ -2445,6 +2452,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#Thermal">
         <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#PassiveSensor"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.nerc.ac.uk/collection/L22/current/TOOL1056/</skos:closeMatch>
     </owl:Class>
     
 
@@ -2453,6 +2461,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#Tower">
         <rdfs:subClassOf rdf:resource="https://w3id.org/reseo#NearGroundPlatform"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocabs.lter-europe.net/elter_cl/10450</skos:closeMatch>
     </owl:Class>
     
 
@@ -2489,6 +2498,7 @@ Example: 15.87375</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/reseo#Zeppelin">
         <rdfs:subClassOf rdf:resource="http://sweetontology.net/matrEquipment/Aircraft"/>
+        <skos:closeMatch rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://vocab.aeris-data.fr/platform/da325d9e-7dc6-43ba-a556-7432f600361c</skos:closeMatch>
     </owl:Class>
     
 
